@@ -11,7 +11,7 @@ npm run dev
 
 <details>
 
-<summary>Recursos</summary>
+<summary>Resources</summary>
 
 - [Vite](https://vitejs.dev/guide/)
 
