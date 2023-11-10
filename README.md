@@ -280,7 +280,7 @@ Plugin to browser [JSONVue](https://chrome.google.com/webstore/detail/jsonview/c
 npm install axios
 ```
 
-#### Resources
+#### Resources
 
 - [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)
 
