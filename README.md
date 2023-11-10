@@ -141,12 +141,6 @@ janja.greet()
 - [javascript.info](https://javascript.info/)
 - [book Eloquent JavaScript](https://eloquentjavascript.net/)
 - [Namaste 🙏 JavaScript](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
 
 #### Resources
 
@@ -155,3 +149,9 @@ janja.greet()
 - [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 - [Understand JavaScript's this Keyword in Depth](https://egghead.io/courses/understand-javascript-s-this-keyword-in-depth)
 - [Classes in JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+### c. Component state, event handlers
+
+#### Resources
+
+- [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
