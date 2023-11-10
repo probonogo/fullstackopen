@@ -237,3 +237,7 @@ Programming is hard, that is why I will use all the possible means to make it ea
 #### JavaScript Arrays
 
 - [YouTube video series Functional Programming in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+
+#### Resources
+
+- https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
