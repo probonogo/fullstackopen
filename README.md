@@ -165,3 +165,7 @@ janja.greet()
 It is forbidden in React to mutate state directly, since [it can result in unexpected side effects](https://stackoverflow.com/a/40309023)
 
 There are situations where it can be beneficial to store a piece of application state in a more complex data structure: https://react.dev/learn/choosing-the-state-structure
+
+#### Debugging React applications
+
+*https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#debugging-react-applications*
