@@ -177,3 +177,12 @@ There are situations where it can be beneficial to store a piece of application 
 - [official React documentation](https://react.dev/learn)
 - [https://react.dev/learn](https://egghead.io/courses/start-learning-react)
 - [Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-reactjs)
+
+#### Web programmers oath
+
+Programming is hard, that is why I will use all the possible means to make it easier
+
+- I will have my browser developer console open all the time
+- I progress with small steps
+- I will write lots of console.log statements to make sure I understand how the code behaves and to help pinpointing problems
+- If my code does not work, I will not write more code. Instead I start deleting the code until it works or just return to a state when everything was still working
