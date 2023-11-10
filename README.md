@@ -14,5 +14,11 @@ npm run dev
 <summary>Resources</summary>
 
 - [Vite](https://vitejs.dev/guide/)
+- [Babel](https://babeljs.io/repl/)
+- []()
+- []()
+- []()
+- []()
+- []()
 
 </details>
