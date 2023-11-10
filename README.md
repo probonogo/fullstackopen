@@ -89,8 +89,31 @@ const square = (p) => {
 }
 ```
 
+#### Object methods and "this"
+
+```js
+const arto = {
+  name: 'Arto Hellas',
+  age: 35,
+  education: 'PhD',
+  greet: function () {
+    console.log('hello, my name is ' + this.name)
+  },
+
+  doAddition: function (a, b) {
+    console.log(a + b)
+  },
+}
+
+arto.doAddition(1, 4) // 5 is printed
+
+const referenceToAddition = arto.doAddition
+referenceToAddition(10, 15) // 25 is printed
+```
+
 #### Resources
 
 - [Chrome V8](https://developers.google.com/v8/)
 - [Console JS Tools online](https://jsbin.com/?js,console)
-- []()
+- [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+- [Understand JavaScript's this Keyword in Depth](https://egghead.io/courses/understand-javascript-s-this-keyword-in-depth)
