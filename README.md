@@ -266,10 +266,20 @@ Programming is hard, that is why I will use all the possible means to make it ea
 - [JSON Server](https://github.com/typicode/json-server)
 
 ```sh
-npm install -g json-server
+npm install json-server --save-dev
 npx json-server --port 3001 --watch db.json
 ```
 
 In [http://localhost:3001/notes](http://localhost:3001/notes) will be the notes.
 
 Plugin to browser [JSONVue](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
+
+- Install `axios`
+
+```sh
+npm install axios
+```
+
+#### Resources
+
+- [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)
