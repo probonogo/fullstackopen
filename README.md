@@ -180,6 +180,16 @@ janja.greet()
 
 ### d. A more complex state, debugging React apps
 
+---
+
+- [Complex state](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/c4d944dddfcc9ef9cdb6365385e01fbca7ee0113/part1/src/App.jsx)
+- [Handling arrays](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/dc7e358f08f3aa1b81e6460fcdb0f9d377b33457/part1/src/App.jsx)
+- [Conditional rendering](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/8752c125dcdb5aca4fdfdb269979c7be2d2dfec3/part1/src/App.jsx)
+- [A function that returns a function](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/8c76e0bcf424f8de125e109d6189a56637040310/part1/src/App.jsx)
+- [Do Not Define Components Within Components](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/7fc5cf6541a4d8a5ce50a803611d4cd8907b4c1a/part1/src/App.jsx)
+
+---
+
 - [object spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
 #### Complex state
