@@ -292,3 +292,20 @@ npm install axios
 - [Effect-hooks](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/6f5b0faf44e2d0587cbd373a1c57b43e6948c72e)
 
 ---
+
+### d. Altering data in server
+
+---
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+---
+
+- [You Don't Know JS: Async & Performance](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch3.md)
