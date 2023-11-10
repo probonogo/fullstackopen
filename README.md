@@ -131,6 +131,23 @@ const janja = new Person('Janja Garnbret', 22)
 janja.greet()
 ```
 
+#### JavaScript materials
+
+*https://fullstackopen.com/en/part1/java_script#classes*
+
+- [Mozilla's JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+- [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
+- [javascript.info](https://javascript.info/)
+- [book Eloquent JavaScript](https://eloquentjavascript.net/)
+- [Namaste 🙏 JavaScript](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP)
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
 #### Resources
 
 - [Chrome V8](https://developers.google.com/v8/)
