@@ -231,3 +231,9 @@ Programming is hard, that is why I will use all the possible means to make it ea
 ## Part 2. Communicating with server
 
 ### a. Rendering a collection, modules
+
+- [Protip: Visual Studio Code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets)
+
+#### JavaScript Arrays
+
+- [YouTube video series Functional Programming in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
