@@ -169,3 +169,11 @@ There are situations where it can be beneficial to store a piece of application 
 #### Debugging React applications
 
 *https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#debugging-react-applications*
+
+#### Useful Reading
+
+*https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#useful-reading*
+
+- [official React documentation](https://react.dev/learn)
+- [https://react.dev/learn](https://egghead.io/courses/start-learning-react)
+- [Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-reactjs)
