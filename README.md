@@ -297,14 +297,11 @@ npm install axios
 
 ---
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Sending Data to the Server](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/cb3ce970cffd3683f9abf2bb5bfd2201e9d318b7/part2-notes-frontend/src/App.jsx)
+- [Changing the Importance of Notes](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/95360a795cb61c5b040c1adbd6e26b91c0fbf587)
+- [Extracting Communication with the Backend into a Separate Module](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/33cf2b402e13811f254dc8bd6a0b3e5a63dd1c79)
+- [Cleaner Syntax for Defining Object Literals](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/ee88365e01a6afec91b8782282cbe03f8d63d8d3/part2-notes-frontend/src/services/notes.js)
+- [Promises and Errors](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/0c4f46b21208955bfe9a105ebb5a63df9356e75b/part2-notes-frontend/src/App.jsx)
 
 ---
 
