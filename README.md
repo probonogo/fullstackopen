@@ -155,3 +155,7 @@ janja.greet()
 #### Resources
 
 - [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+### d. A more complex state, debugging React apps
+
+- [object spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
