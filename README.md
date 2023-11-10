@@ -162,6 +162,18 @@ janja.greet()
 
 ### c. Component state, event handlers
 
+---
+
+- [Component helper functions](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/920470f1eae28ade3f0a6d42907ff7cb57fc9f02/part1/src/App.jsx)
+- [Destructuring](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/b7e4742763ce970ec82bafef135cd89395bd394e/part1/src/App.jsx)
+- [Stateful component](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/d604a05c73fb1da875c65805b1ccb4d5f17c5d47/part1/src/App.jsx)
+- [Event handling](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/84ba39ba632ad03cccbe47a4b4ff3e172b91c920/part1/src/App.jsx)
+- [An event handler is a function](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/9b9fc911d175d98829fd2b88d33ae4b278cd4cb5/part1/src/App.jsx)
+- [Passing state - to child components](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/971bd25a5b27f0f9977e199ca3204fc1793ad9f9/part1/src/App.jsx)
+- [Refactoring the components](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/8d76d29f253cc9431a391dc8b8e2a44ae1d51c87/part1/src/App.jsx)
+
+---
+
 #### Resources
 
 - [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
