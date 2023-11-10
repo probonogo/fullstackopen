@@ -11,6 +11,16 @@ npm install
 npm run dev
 ```
 
+---
+
+- [Component](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/4d5737f7bf8f287840f0d867ba85863c85e5b0cf/part1/src/App.jsx)
+- [Multiple components](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/e9c634b04c4a2e1766d1cf6a92a1b5701b62e66e/part1/src/App.jsx)
+- [props: passing data to components](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/09b9ad36ffac4221bb18b038f192ade041d036a6/part1/src/App.jsx)
+- [Possible error message](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/8b2c117b9ceaf98e7a1411243bbc5dea6a8a0303/part1/.eslintrc.cjs)
+- [Do not render objects](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/fbcaf4f27694da6e5362a15654c4edea37f01bf6/part1/src/App.jsx)
+
+---
+
 #### Resources
 
 - [Vite](https://vitejs.dev/guide/)
@@ -178,7 +188,7 @@ There are situations where it can be beneficial to store a piece of application 
 - [https://react.dev/learn](https://egghead.io/courses/start-learning-react)
 - [Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-reactjs)
 
-#### Web programmers oath
+#### Web programmers oath
 
 Programming is hard, that is why I will use all the possible means to make it easier
 
