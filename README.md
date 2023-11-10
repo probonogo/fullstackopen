@@ -17,7 +17,7 @@ npm run dev
 - [Babel](https://babeljs.io/repl/)
 - [ESLint](https://eslint.org/)
 - [react/prop-types](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md)
-- []()
+- [Fragments](https://react.dev/reference/react/Fragment)
 - []()
 - []()
 
