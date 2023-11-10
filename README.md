@@ -1,5 +1,14 @@
 # fullstackopen-Course-and-testing
 
+- Table of contents
+  - [Part 1. Introduction to React](#part-1-introduction-to-react)
+    - [a. Introduction to React](#a-introduction-to-react)
+    - [b. JavaScript](#b-javascript)
+    - [c. Component state, event handlers](#c-component-state--event-handlers)
+    - [d. A more complex state, debugging React apps](#d-a-more-complex-state--debugging-react-apps)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Part 1. Introduction to React
 
 ### a. Introduction to React
