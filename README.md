@@ -251,3 +251,10 @@ Programming is hard, that is why I will use all the possible means to make it ea
 - https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
 
 ### b. Forms
+
+---
+
+- [Controlled component](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/9f855dcf22bd4ef04e447f72b17d1978ba5295e7/part2-notes-frontend/src/App.jsx)
+- [Filtering Displayed Elements](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/618ff4693f764aa9304c7471dddce7183512f12b/part2-notes-frontend/src/App.jsx)
+
+---
