@@ -47,14 +47,50 @@ console.log(m2)
 // [ '<li>1</li>', '<li>2</li>', '<li>3</li>' ] is printed
 ```
 
+#### Functions
+
+```js
+const sum = (p1, p2) => {
+  console.log(p1)
+  console.log(p2)
+  return p1 + p2
+}
+
+const result = sum(1, 5)
+console.log(result)
+
+// If there is just a single parameter, we can exclude the parentheses from the definition:
+const square = (p) => {
+  console.log(p)
+  return p * p
+
+  // If the function only contains a single expression then the braces are not needed.
+  const square = (p) => p * p
+
+  const t = [1, 2, 3]
+  const tSquared = t.map((p) => p * p)
+  // tSquared is now [1, 4, 9]
+
+  // There are two ways to reference the function; one is giving a name in a function declaration.
+  function product(a, b) {
+    return a * b
+  }
+
+  const result = product(2, 6)
+  // result is now 12
+
+  //The other way to define the function is by using a function expression.
+  const average = function (a, b) {
+    return (a + b) / 2
+  }
+
+  const result = average(2, 5)
+  // result is now 3.5
+}
+```
+
 #### Resources
 
 - [Chrome V8](https://developers.google.com/v8/)
 - [Console JS Tools online](https://jsbin.com/?js,console)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
 - []()
