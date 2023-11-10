@@ -283,3 +283,12 @@ npm install axios
 #### Resources
 
 - [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)
+
+---
+
+- [File db.json with data](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/b8da7a5b7e0f85635e88edeaed98ceb28d620242/part2-notes-frontend/db.json)
+- [package.json - scripts section - server](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/e5bede5f4e91f31aeb5616f88356abda5a25a294/part2-notes-frontend/package.json)
+- [Axios and promises](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/94783c0ca12ea22ed51364274eee3d6a1697b2f0/part2-notes-frontend/src/main.jsx)
+- [Effect-hooks](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/6f5b0faf44e2d0587cbd373a1c57b43e6948c72e)
+
+---
