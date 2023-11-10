@@ -232,6 +232,14 @@ Programming is hard, that is why I will use all the possible means to make it ea
 
 ### a. Rendering a collection, modules
 
+---
+
+- [Rendering Collections](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/7d207c88da15386d9fa759e405fef9d268519bb2/part1/src/main.jsx)
+- [Key-attribute](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/21be95095233feeedbdb72fef1d8487e1bca50d7/part1/src/main.jsx)
+- [Refactoring Modules](https://github.com/fullstack-hy2020/part2-notes/tree/part2-1)
+
+---
+
 - [Protip: Visual Studio Code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets)
 
 #### JavaScript Arrays
@@ -241,3 +249,5 @@ Programming is hard, that is why I will use all the possible means to make it ea
 #### Resources
 
 - https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
+
+### b. Forms
