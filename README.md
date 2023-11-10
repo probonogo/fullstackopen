@@ -258,3 +258,18 @@ Programming is hard, that is why I will use all the possible means to make it ea
 - [Filtering Displayed Elements](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/618ff4693f764aa9304c7471dddce7183512f12b/part2-notes-frontend/src/App.jsx)
 
 ---
+
+### c. Getting data from server
+
+#### The browser as a runtime environment
+
+- [JSON Server](https://github.com/typicode/json-server)
+
+```sh
+npm install -g json-server
+npx json-server --port 3001 --watch db.json
+```
+
+In [http://localhost:3001/notes](http://localhost:3001/notes) will be the notes.
+
+Plugin to browser [JSONVue](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
