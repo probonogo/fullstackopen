@@ -306,3 +306,7 @@ npm install axios
 ---
 
 - [You Don't Know JS: Async & Performance](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch3.md)
+
+#### Resources
+
+
