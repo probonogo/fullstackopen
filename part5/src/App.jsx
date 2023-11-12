@@ -38,6 +38,8 @@ const App = () => {
         password,
       })
 
+      window.localStorage.setItem('loggedNoteappUser', JSON.stringify(user))
+
       noteService.setToken(user.token)
       setUser(user)
       setUsername('')
@@ -54,6 +56,15 @@ const App = () => {
     noteService.getAll().then((initialNotes) => {
       setNotes(initialNotes)
     })
+  }, [])
+
+  useEffect(() => {
+    const loggedUserJSON = window.localStorage.getItem('loggedNoteappUser')
+    if (loggedUserJSON) {
+      const user = JSON.parse(loggedUserJSON)
+      setUser(user)
+      noteService.setToken(user.token)
+    }
   }, [])
 
   // do not render anything if notes is still null
