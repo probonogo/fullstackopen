@@ -401,6 +401,7 @@ _See [.eslintrc.cjs](part5/.eslintrc.cjs) file and [.eslintignore](part5/.eslint
 Install libraries (react-testing-library):
 
 ```sh
+npm install jest babel-jest @babel/preset-env @babel/preset-react
 npm install --save-dev @testing-library/react @testing-library/jest-dom jest-environment-jsdom @babel/preset-env @babel/preset-react
 ```
 
