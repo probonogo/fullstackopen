@@ -404,7 +404,7 @@ Install libraries (react-testing-library):
 npm install --save-dev @testing-library/react @testing-library/jest-dom jest-environment-jsdom @babel/preset-env @babel/preset-react
 ```
 
----
+_Extra configuration with [vite[(https://fullstackopen.com/en/part5/testing_react_apps#rendering-the-component-for-tests)]._
 
 - []()
 - []()
