@@ -390,13 +390,19 @@ npm install prop-types
 
 - [ESlint](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/51134193d130d6a277181996131da4f927619e64)
 
-```
+```sh
 npm install --save-dev eslint-plugin-jest
 ```
 
 _See [.eslintrc.cjs](part5/.eslintrc.cjs) file and [.eslintignore](part5/.eslintignore)_
 
 ### c. Testing React apps
+
+Install libraries (react-testing-library):
+
+```sh
+npm install --save-dev @testing-library/react @testing-library/jest-dom jest-environment-jsdom @babel/preset-env @babel/preset-react
+```
 
 ---
 
