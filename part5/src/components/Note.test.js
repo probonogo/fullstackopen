@@ -9,10 +9,13 @@ test('renders content', () => {
     important: true,
   }
 
-  const { container } = render(<Note note={note} />)
+  render(<Note note={note} />)
 
-  const div = container.querySelector('.note')
-  expect(div).toHaveTextContent(
+  const element = screen.getByText(
     'Component testing is done with react-testing-library'
   )
+
+  screen.debug(element)
+
+  expect(element).toBeDefined()
 })
