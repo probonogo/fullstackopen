@@ -420,6 +420,15 @@ _Extra configuration with [vite](https://fullstackopen.com/en/part5/testing_reac
 
 ### d. End to end testing
 
+Install `Cypress`:
+
+```sh
+npm install --save-dev cypress
+npm install eslint-plugin-cypress --save-dev
+```
+
+Execute backend in test mode: `cd backend && npm run start:test` and frontend: `npm run dev`. Also in an additional terminal with cypress: `npm run cypress:open`
+
 ---
 
 - []()
