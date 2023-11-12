@@ -362,11 +362,9 @@ npm run dev
 
 ---
 
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Handling login](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/f8ef791daf784b166d295ee18672c03918f9425d) _Ver: login.js y notes.js_
+- [Creating new notes](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/574402bf3109b4d293a7eb741ae3d24edbdb0c84)
+- [Saving the token to the browser's local storage](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/beb3c8c9e34c4ba68758c464b9b952dd101fd0d7)
 
 ---
 
