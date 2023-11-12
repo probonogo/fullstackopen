@@ -30,6 +30,12 @@
       - [Resources](#resources-4)
     - [d. Altering data in server](#d-altering-data-in-server)
     - [e. Adding styles to React app](#e-adding-styles-to-react-app)
+  - [Part 5. Testing React apps](#part-5-testing-react-apps)
+    - [a. Login in frontend](#a-login-in-frontend)
+    - [b. props.children and proptypes](#b-propschildren-and-proptypes)
+    - [c. Testing React apps](#c-testing-react-apps)
+    - [d. End to end testing](#d-end-to-end-testing)
+      - [Resources](#resources-5)
 
 ## Part 1. Introduction to React
 
@@ -339,3 +345,62 @@ npm install axios
 - [Couple of important remarks](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/4dfd93164b5ada3f087ddf70a94266714a201f82)
 
 ---
+
+## Part 5. Testing React apps
+
+### a. Login in frontend
+
+---
+
+- []()
+- []()
+- []()
+- []()
+- []()
+
+---
+
+### b. props.children and proptypes
+
+---
+
+- []()
+- []()
+- []()
+- []()
+- []()
+
+---
+
+### c. Testing React apps
+
+---
+
+- []()
+- []()
+- []()
+- []()
+- []()
+
+---
+
+### d. End to end testing
+
+---
+
+- []()
+- []()
+- []()
+- []()
+- []()
+
+---
+
+#### Resources
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
