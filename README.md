@@ -408,11 +408,13 @@ npm install --save-dev @testing-library/user-event
 
 _Extra configuration with [vite[(https://fullstackopen.com/en/part5/testing_react_apps#rendering-the-component-for-tests)]._
 
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Rendering the component for tests](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/1b3863b6890ac56502c11fae9f7fb1bf85a59d75)
+- [Searching for content in a component](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/a91a080284c607c3d575b59b96bc4eac690c6b53)
+- [Debugging tests](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/d8a00cee65ac4b302bcd7bfbea0b36ce36ef87c9)
+- [Clicking buttons in tests](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/2f45f90f75c379994e2ee87f4cfb5ebf579c3ef7)
+- [Tests for the Togglable component](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/ea75fbd7e83c064b1aeae9f45faa5d6b55dffe69)
+- [Testing the forms](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/7a6c868a1348193d5f5a9b57e02babb619b10e63)
+- [About finding the elements](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/c57532d9f6a1f180d67d84ab1501143614fda463)
 
 ---
 
