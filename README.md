@@ -350,6 +350,16 @@ npm install axios
 
 ### a. Login in frontend
 
+```sh
+// Primer terminal para ejecutar el backend nodeJS (part4)
+cd part5/backend
+npm run dev
+
+// En un segundo terminal abierto para ejecutar react (part5 a partir de part2)
+cd part5
+npm run dev
+```
+
 ---
 
 - []()
