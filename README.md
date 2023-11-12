@@ -382,9 +382,19 @@ npm run dev
 - []()
 - []()
 - []()
-- []()
+- [PropTypes]()
 
----
+```sh
+npm install prop-types
+```
+
+- [ESlint]()
+
+```
+npm install --save-dev eslint-plugin-jest
+```
+
+_See [.eslintrc.cjs](part5/.eslintrc.cjs) file and [.eslintignore](part5/.eslintignore)_
 
 ### c. Testing React apps
 
