@@ -1,13 +1,35 @@
 # fullstackopen-Course-and-testing
 
-- Table of contents
+[Deploy Examples]()
+
+- [fullstackopen-Course-and-testing](#fullstackopen-course-and-testing)
   - [Part 1. Introduction to React](#part-1-introduction-to-react)
     - [a. Introduction to React](#a-introduction-to-react)
+      - [Resources](#resources)
     - [b. JavaScript](#b-javascript)
-    - [c. Component state, event handlers](#c-component-state--event-handlers)
-    - [d. A more complex state, debugging React apps](#d-a-more-complex-state--debugging-react-apps)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+      - [Arrays](#arrays)
+      - [Functions](#functions)
+      - [Object methods and "this"](#object-methods-and-this)
+      - [Classes](#classes)
+      - [JavaScript materials](#javascript-materials)
+      - [Resources](#resources-1)
+    - [c. Component state, event handlers](#c-component-state-event-handlers)
+      - [Resources](#resources-2)
+    - [d. A more complex state, debugging React apps](#d-a-more-complex-state-debugging-react-apps)
+      - [Complex state](#complex-state)
+      - [Debugging React applications](#debugging-react-applications)
+      - [Useful Reading](#useful-reading)
+      - [Web programmers oath](#web-programmers-oath)
+  - [Part 2. Communicating with server](#part-2-communicating-with-server)
+    - [a. Rendering a collection, modules](#a-rendering-a-collection-modules)
+      - [JavaScript Arrays](#javascript-arrays)
+      - [Resources](#resources-3)
+    - [b. Forms](#b-forms)
+    - [c. Getting data from server](#c-getting-data-from-server)
+      - [The browser as a runtime environment](#the-browser-as-a-runtime-environment)
+      - [Resources](#resources-4)
+    - [d. Altering data in server](#d-altering-data-in-server)
+    - [e. Adding styles to React app](#e-adding-styles-to-react-app)
 
 ## Part 1. Introduction to React
 
@@ -307,6 +329,13 @@ npm install axios
 
 - [You Don't Know JS: Async & Performance](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch3.md)
 
-#### Resources
+### e. Adding styles to React app
 
+---
 
+- [Adding styles to React app](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/3ecd504ec075bcd6927a26cd26378b456a339af4)
+- [Improved error message](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/1ce7769f220918723c0bd64c4a3bc2f203d12583)
+- [Inline styles](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/8c233b806b6e8bba07a3d2d7ee2ff5b24f3c8713)
+- [Couple of important remarks](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/4dfd93164b5ada3f087ddf70a94266714a201f82)
+
+---
