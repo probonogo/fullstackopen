@@ -378,17 +378,17 @@ npm run dev
 
 ---
 
-- []()
-- []()
-- []()
-- []()
-- [PropTypes]()
+- [Displaying the login form only when appropriate](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/4eb85d3d8de9982c1ee3052df0c298e52c870e60)
+- [The components children, aka. props.children](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/a841f5834da0c615b0d163b7ebb002ec583b46ae)
+- [State of the forms](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/f595abd10e3780e036c67b030f8850b93bd5e99a)
+- [References to components with ref](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/5a346be0481c55c98634716835eda8c7aae14ba5)
+- [PropTypes](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/c237c51350dab8203787f9ef5ae7eea978743ae9)
 
 ```sh
 npm install prop-types
 ```
 
-- [ESlint]()
+- [ESlint](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/51134193d130d6a277181996131da4f927619e64)
 
 ```
 npm install --save-dev eslint-plugin-jest
