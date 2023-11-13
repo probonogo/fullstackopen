@@ -1,12 +1,12 @@
 describe('Note app', function () {
   beforeEach(function () {
-    cy.request('POST', 'http://localhost:3001/api/testing/reset')
+    cy.request('POST', `${Cypress.env('BACKEND')}/testing/reset`)
     const user = {
       name: 'Matti Luukkainen',
       username: 'mluukkai',
       password: 'salainen',
     }
-    cy.request('POST', 'http://localhost:3001/api/users/', user)
+    cy.request('POST', `${Cypress.env('BACKEND')}/users`, user)
     cy.visit('http://localhost:5173')
   })
 
@@ -32,10 +32,19 @@ describe('Note app', function () {
 
   describe('when logged in', function () {
     beforeEach(function () {
-      cy.contains('log in').click()
-      cy.get('input:first').type('mluukkai')
-      cy.get('input:last').type('salainen')
-      cy.get('#login-button').click()
+      // cy.contains('log in').click()
+      // cy.get('input:first').type('mluukkai')
+      // cy.get('input:last').type('salainen')
+      // cy.get('#login-button').click()
+
+      // cy.request('POST', 'http://localhost:3001/api/login', {
+      //   username: 'mluukkai',
+      //   password: 'salainen',
+      // }).then((response) => {
+      //   localStorage.setItem('loggedNoteappUser', JSON.stringify(response.body))
+      //   cy.visit('http://localhost:5173')
+      // })
+      cy.login({ username: 'mluukkai', password: 'salainen' })
     })
 
     it('a new note can be created', function () {
@@ -47,9 +56,13 @@ describe('Note app', function () {
 
     describe('and a note exists', function () {
       beforeEach(function () {
-        cy.contains('new note').click()
-        cy.get('input').type('another note cypress')
-        cy.contains('save').click()
+        // cy.contains('new note').click()
+        // cy.get('input').type('another note cypress')
+        // cy.contains('save').click()
+        cy.createNote({
+          content: 'another note cypress',
+          important: true,
+        })
       })
 
       it('it can be made not important', function () {
