@@ -405,7 +405,7 @@ npm install --save-dev @testing-library/react @testing-library/jest-dom jest-env
 npm install --save-dev @testing-library/user-event
 ```
 
-_Extra configuration with [vite](https://fullstackopen.com/en/part5/testing_react_apps#rendering-the-component-for-tests)]._
+_Extra configuration with [vite](https://fullstackopen.com/en/part5/testing_react_apps#rendering-the-component-for-tests)._
 
 - [Rendering the component for tests](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/1b3863b6890ac56502c11fae9f7fb1bf85a59d75)
 - [Searching for content in a component](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/a91a080284c607c3d575b59b96bc4eac690c6b53)
