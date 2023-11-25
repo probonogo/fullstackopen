@@ -446,7 +446,13 @@ Execute backend in test mode: `cd backend && npm run start:test` and frontend: `
 ### a. Flux-architecture and Redux
 
 ```sh
-
+npm create vite@latest
+cd <install-dir>
+npm install
+npm run dev
+npm install redux
 ```
+
+- [Redux]()
 
 ---

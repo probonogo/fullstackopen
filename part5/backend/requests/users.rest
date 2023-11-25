@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
 "username": "mluukkai", 
-"name": "Superuser", 
+"name": "Matti Luukkainen", 
 "password": "salainen", 
 "email": "myemail@email.com"
 }
@@ -60,4 +60,4 @@ PUT http://localhost:3001/api/users/64ff96536e561d986092af5f Content-Type: appli
 }
 
 ### 
-DELETE http://localhost:3001/api/users/64ff96297079dd5a4d82316f
+DELETE http://localhost:3001/api/users/650a2852e01d2da99f6640b4
