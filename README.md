@@ -35,6 +35,8 @@
     - [b. props.children and proptypes](#b-propschildren-and-proptypes)
     - [c. Testing React apps](#c-testing-react-apps)
     - [d. End to end testing](#d-end-to-end-testing)
+  - [Part 6. Flux-architexture and Redux](#part-6-flux-architexture-and-redux)
+    - [a. Flux-architecture and Redux](#a-flux-architecture-and-redux)
 
 ## Part 1. Introduction to React
 
@@ -436,5 +438,15 @@ Execute backend in test mode: `cd backend && npm run start:test` and frontend: `
 - [Failed login test](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/35effac63736b7a63d4f9a99e0359cd5338680d9)
 - [Bypassing the UI](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/b6d82961c0a9d3234ba32b8dc75d2ffdfed0f37a)
 - [Changing the importance of a note](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/22bb8af0271238cc8f1a2073c232d4876b83914a)
+
+---
+
+## Part 6. Flux-architexture and Redux
+
+### a. Flux-architecture and Redux
+
+```sh
+
+```
 
 ---
