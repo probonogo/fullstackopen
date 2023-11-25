@@ -455,5 +455,12 @@ npm install redux
 
 - [Redux]()
 - [Redux-notes]()
+- [Pure functions, immutable]()
+
+```sh
+npm install --save-dev jest @babel/preset-env @babel/preset-react eslint-plugin-jest
+// add the library deep-freeze, which can be used to ensure that the reducer has been correctly defined as an immutable function
+npm install --save-dev deep-freeze
+```
 
 ---
