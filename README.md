@@ -454,5 +454,6 @@ npm install redux
 ```
 
 - [Redux]()
+- [Redux-notes]()
 
 ---
