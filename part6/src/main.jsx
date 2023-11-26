@@ -1,59 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-
-import { createStore } from 'redux'
-
-const noteReducer = (state = [], action) => {
-  if (action.type === 'NEW_NOTE') {
-    state.push(action.data)
-    return state
-  }
-
-  return state
-}
-
-const store = createStore(noteReducer)
-
-store.dispatch({
-  type: 'NEW_NOTE',
-  data: {
-    content: 'the app state is in redux store',
-    important: true,
-    id: 1,
-  },
-})
-
-store.dispatch({
-  type: 'NEW_NOTE',
-  data: {
-    content: 'state changes are made with actions',
-    important: false,
-    id: 2,
-  },
-})
-
-const generateId = () => Number((Math.random() * 1000000).toFixed(0))
+import { createNote, toggleImportanceOf } from './reducers/noteReducer'
+import { useSelector, useDispatch } from 'react-redux'
 
 const App = () => {
+  const dispatch = useDispatch()
+  const notes = useSelector((state) => state)
+  // const importantNotes = useSelector(state => state.filter(note => note.important))
+
   const addNote = (event) => {
     event.preventDefault()
     const content = event.target.note.value
     event.target.note.value = ''
-    store.dispatch({
-      type: 'NEW_NOTE',
-      payload: {
-        content,
-        important: false,
-        id: generateId(),
-      },
-    })
+
+    dispatch(createNote(content))
   }
 
   const toggleImportance = (id) => {
-    store.dispatch({
-      type: 'TOGGLE_IMPORTANCE',
-      payload: { id },
-    })
+    dispatch(toggleImportanceOf(id))
   }
 
   return (
@@ -63,7 +25,7 @@ const App = () => {
         <button type='submit'>add</button>
       </form>
       <ul>
-        {store.getState().map((note) => (
+        {notes.map((note) => (
           <li key={note.id} onClick={() => toggleImportance(note.id)}>
             {note.content} <strong>{note.important ? 'important' : ''}</strong>
           </li>
@@ -73,11 +35,4 @@ const App = () => {
   )
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
-
-const renderApp = () => {
-  root.render(<App />)
-}
-
-renderApp()
-store.subscribe(renderApp)
+export default App
