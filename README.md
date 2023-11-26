@@ -493,6 +493,8 @@ npm install redux
 npm install @reduxjs/toolkit
 ```
 
+- [Redux Toolkit and console.log]()
+
 ### Resources
 
 - [Redux Toolkit](https://redux-toolkit.js.org/)
