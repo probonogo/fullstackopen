@@ -466,5 +466,6 @@ npm install --save-dev deep-freeze
 _[Install test libraries and configuration](https://gist.github.com/patchamama/d8de350ca100daa570d09244f0892a7e)_
 
 - [Array spread syntax]()
+- [Uncontrolled form]()
 
 ---
