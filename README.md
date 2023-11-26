@@ -37,6 +37,8 @@
     - [d. End to end testing](#d-end-to-end-testing)
   - [Part 6. Flux-architexture and Redux](#part-6-flux-architexture-and-redux)
     - [a. Flux-architecture and Redux](#a-flux-architecture-and-redux)
+    - [b. Many Reducers](#b-many-reducers)
+    - [Resources](#resources-5)
 
 ## Part 1. Introduction to React
 
@@ -454,6 +456,11 @@ npm install redux
 ```
 
 - [Redux]()
+
+```sh
+npm install redux
+```
+
 - [Redux-notes]()
 - [Pure functions, immutable]()
 
@@ -467,5 +474,27 @@ _[Install test libraries and configuration](https://gist.github.com/patchamama/d
 
 - [Array spread syntax]()
 - [Uncontrolled form]()
+- [Actions creators]()
+- [Forwarding Redux Store to various components]()
+
+```sh
+npm install redux
+```
+
+- [More components]()
+
+### b. Many Reducers
+
+- [Store with complex state]()
+- [Finishing the filters]()
+- [Redux Toolkit]()
+
+```sh
+npm install @reduxjs/toolkit
+```
+
+### Resources
+
+- [Redux Toolkit](https://redux-toolkit.js.org/)
 
 ---
