@@ -1,38 +1,16 @@
-import { createNote, toggleImportanceOf } from './reducers/noteReducer'
-import { useSelector, useDispatch } from 'react-redux'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
-const App = () => {
-  const dispatch = useDispatch()
-  const notes = useSelector((state) => state)
-  // const importantNotes = useSelector(state => state.filter(note => note.important))
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
 
-  const addNote = (event) => {
-    event.preventDefault()
-    const content = event.target.note.value
-    event.target.note.value = ''
+import App from './App'
+import noteReducer from './reducers/noteReducer'
 
-    dispatch(createNote(content))
-  }
+const store = createStore(noteReducer)
 
-  const toggleImportance = (id) => {
-    dispatch(toggleImportanceOf(id))
-  }
-
-  return (
-    <div>
-      <form onSubmit={addNote}>
-        <input name='note' />
-        <button type='submit'>add</button>
-      </form>
-      <ul>
-        {notes.map((note) => (
-          <li key={note.id} onClick={() => toggleImportance(note.id)}>
-            {note.content} <strong>{note.important ? 'important' : ''}</strong>
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
-}
-
-export default App
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+)
