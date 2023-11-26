@@ -495,6 +495,12 @@ npm install @reduxjs/toolkit
 
 - [Redux Toolkit and console.log]()
 
+```js
+console.log(JSON.parse(JSON.stringify(state)))
+```
+
+- [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+
 ### Resources
 
 - [Redux Toolkit](https://redux-toolkit.js.org/)
