@@ -455,14 +455,14 @@ npm run dev
 npm install redux
 ```
 
-- [Redux]()
+- [Redux](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/b587cc22e7a7f54c3e5a723e1a20dafc62fd1403)
 
 ```sh
 npm install redux
 ```
 
-- [Redux-notes]()
-- [Pure functions, immutable]()
+- [Redux-notes](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/80d7b5f1cec3f50f947418f5471169acd11de59f)
+- [Pure functions, immutable](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/6a159920528ed6c6ccdb6eb6dae5f30f1242c829)
 
 ```sh
 npm install --save-dev jest @babel/preset-env @babel/preset-react eslint-plugin-jest
@@ -472,28 +472,28 @@ npm install --save-dev deep-freeze
 
 _[Install test libraries and configuration](https://gist.github.com/patchamama/d8de350ca100daa570d09244f0892a7e)_
 
-- [Array spread syntax]()
-- [Uncontrolled form]()
-- [Actions creators]()
-- [Forwarding Redux Store to various components]()
+- [Array spread syntax](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/a9f12078509f17f05bfd7eef02ae5d0e849a3f49)
+- [Uncontrolled form](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/3993f8c44f60bc5b2f3bde518cafd795fb9f125a)
+- [Actions creators](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/a7b4c5b2d108e7431d7713ffaad7ce4cc3e81210)
+- [Forwarding Redux Store to various components](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/939d8dcadf2a9965c6bed156350953d48b2ab8e7)
 
 ```sh
 npm install redux
 ```
 
-- [More components]()
+- [More components](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/9344f22322f88317f41f00fa642aa234dfd72566)
 
 ### b. Many Reducers
 
-- [Store with complex state]()
-- [Finishing the filters]()
-- [Redux Toolkit]()
+- [Store with complex state](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/355c5e2231b88c14c5c760bb79ade22f12c94c7d)
+- [Finishing the filters](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/015b7e783e263eae318f33fac1d4bd07fe2e370f)
+- [Redux Toolkit](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/093f73f2c588a8250fe7a471880b3a928b5e304f)
 
 ```sh
 npm install @reduxjs/toolkit
 ```
 
-- [Redux Toolkit and console.log]()
+- [Redux Toolkit and console.log](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/c0428846cbab5f6eae54fcdf803d1d97d39e799e)
 
 ```js
 console.log(JSON.parse(JSON.stringify(state)))
