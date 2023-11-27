@@ -505,6 +505,7 @@ console.log(JSON.parse(JSON.stringify(state)))
 ### c. Communicating with server in a redux application
 
 - [Getting data from the backend]()
+- [Sending data to the backend]()
 
 ### Resources
 
