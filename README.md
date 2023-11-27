@@ -38,6 +38,7 @@
   - [Part 6. Flux-architexture and Redux](#part-6-flux-architexture-and-redux)
     - [a. Flux-architecture and Redux](#a-flux-architecture-and-redux)
     - [b. Many Reducers](#b-many-reducers)
+    - [c. Communicating with server in a redux application](#c-communicating-with-server-in-a-redux-application)
     - [Resources](#resources-5)
 
 ## Part 1. Introduction to React
@@ -500,6 +501,10 @@ console.log(JSON.parse(JSON.stringify(state)))
 ```
 
 - [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+
+### c. Communicating with server in a redux application
+
+- [Getting data from the backend]()
 
 ### Resources
 
