@@ -504,8 +504,9 @@ console.log(JSON.parse(JSON.stringify(state)))
 
 ### c. Communicating with server in a redux application
 
-- [Getting data from the backend]()
-- [Sending data to the backend]()
+- [Getting data from the backend](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/b751fd63a0766dc61cd05c89f0c34f4f00cfbe03)
+- [Sending data to the backend](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/ab59949e9c6ccfff283688781877f223143f7f05)
+- [Asynchronous actions and Redux thunk](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/d4c604b9cf8d72c57a1a513209ef3011582c3e4d)
 
 ### Resources
 
