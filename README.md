@@ -518,6 +518,8 @@ npm install @tanstack/react-query
 ```
 
 - [Synchronizing data to the server using React Query]()
+- [useReducer](https://fullstackopen.com/en/part6/react_query_use_reducer_and_the_context#use-reducer) | [Example](https://github.com/fullstack-hy2020/hook-counter/tree/part6-1)
+- [useContext - Using context for passing the state to components](https://fullstackopen.com/en/part6/react_query_use_reducer_and_the_context#using-context-for-passing-the-state-to-components) | [Example](https://github.com/fullstack-hy2020/hook-counter/tree/part6-2)
 
 ### Resources
 
