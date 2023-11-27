@@ -511,6 +511,14 @@ console.log(JSON.parse(JSON.stringify(state)))
 
 ### d. React Query, useReducer and the context
 
+- [Managing data on the server with the React Query library]()
+
+```sh
+npm install @tanstack/react-query
+```
+
+- [Synchronizing data to the server using React Query]()
+
 ### Resources
 
 - [Redux Toolkit](https://redux-toolkit.js.org/)
