@@ -39,6 +39,7 @@
     - [a. Flux-architecture and Redux](#a-flux-architecture-and-redux)
     - [b. Many Reducers](#b-many-reducers)
     - [c. Communicating with server in a redux application](#c-communicating-with-server-in-a-redux-application)
+    - [d. React Query, useReducer and the context](#d-react-query-usereducer-and-the-context)
     - [Resources](#resources-5)
 
 ## Part 1. Introduction to React
@@ -507,6 +508,8 @@ console.log(JSON.parse(JSON.stringify(state)))
 - [Getting data from the backend](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/b751fd63a0766dc61cd05c89f0c34f4f00cfbe03)
 - [Sending data to the backend](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/ab59949e9c6ccfff283688781877f223143f7f05)
 - [Asynchronous actions and Redux thunk](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/d4c604b9cf8d72c57a1a513209ef3011582c3e4d)
+
+### d. React Query, useReducer and the context
 
 ### Resources
 
