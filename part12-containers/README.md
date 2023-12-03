@@ -24,6 +24,34 @@ docker container run hello-world
 docker container run -it ubuntu bash
 ```
 
+- Ubuntu image
+
+Listar containers:
+
+```sh
+docker container ls -a
+# o
+docker ps -a
+```
+
+Iniciar el contenedor:
+
+```sh
+docker start CONTAINER-ID-OR-CONTAINER-NAME
+```
+
+Listar solamente los contenedores que se están ejecutando:
+
+```sh
+docker container ls
+```
+
+Eliminar un contenedor:
+
+```sh
+docker kill CONTAINER-ID-OR-CONTAINER-NAME
+```
+
 ### b. Building and configuring enviroments
 
 ### c. Basics of Orchestration
