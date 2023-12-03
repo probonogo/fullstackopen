@@ -98,4 +98,29 @@ Ejecutar la imagen abriendo el bash y no el comando por defecto `CMD node index.
 docker run -it fs-hello-world bash
 ```
 
+- More meaningful image
+
+Create a basic Express application skeleton with [express-generator](https://expressjs.com/en/starter/generator.html):
+
+```sh
+mkdir playground
+cd playground
+npx express-generator
+npm install
+DEBUG=playground:* npm start
+# browse http://localhost:3000
+```
+
+Poner todo en una imagen y ejecutarla. Crear archivo [Dockerfile](playground/Dockerfile) usando como base node:16, copiar los archivos dentro de express y ejecutarlo en `playground`:
+
+```sh
+docker build -t express-server .
+# ejecutar la imagen en un contanedor:
+docker run -p 3123:3000 express-server
+# browse http://localhost:3123
+# Apagar o quitar el docker
+docker container ls
+docker container kill <id>
+```
+
 ### c. Basics of Orchestration
