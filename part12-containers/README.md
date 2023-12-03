@@ -189,4 +189,17 @@ docker compose up --build
 docker compose up -d
 ```
 
+- Utilizing containers in development
+
+Se pueden usar varios `yaml conf. files` en la misma carpeta, con el parámetro `-f` se puede especificar que archivo ejecutar, como este [docker-compose.dev.yml](todo-app/todo-backend/docker-compose.dev.yml):
+
+```sh
+cd todo-app/todo-backend
+docker compose -f docker-compose.dev.yml up -d
+
+# browse http://localhost:3456
+# para seguir los registros:
+# docker compose -f docker-compose.dev.yml logs -f
+```
+
 ### c. Basics of Orchestration
