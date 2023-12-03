@@ -52,6 +52,30 @@ Eliminar un contenedor:
 docker kill CONTAINER-ID-OR-CONTAINER-NAME
 ```
 
+- Other Docker commands
+
+Crear una nueva imagen de una existente (modificada)
+
+```sh
+docker commit CONTAINER-ID-OR-CONTAINER-NAME NEW-IMAGE-NAME
+```
+
+Listar las imágenes:
+
+```sh
+docker image ls
+```
+
+Usar imagen de node `https://hub.docker.com/_/node`, crear archivo local y copiarlo dentro del contenedor:
+
+```sh
+echo "console.log('Hello, World')" > index.js
+docker container run -it --name hello-node node:16 bash
+mkdir /usr/src/app
+# Desde otra terminal sin cerrar el acceso bash
+docker container cp ./index.js hello-node:/usr/src/app/index.js
+```
+
 ### b. Building and configuring enviroments
 
 ### c. Basics of Orchestration
