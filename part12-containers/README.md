@@ -228,4 +228,13 @@ MONGO_URL=mongodb://the_username:the_password@localhost:3456/the_database npm ru
 # browse http://localhost:3000/todos
 ```
 
+- Persisting data with volumes
+
+There are two distinct methods to store the data:
+
+    - Declaring a location in your filesystem (called bind mount)
+    - Letting Docker decide where to store the data (volume)
+
+Ver [docker-compose.dev.yml](todo-app/todo-backend/docker-compose.dev.yml) sección `volumes` con las dos formas de hacer datos persistentes local o en un volumen (al final del conf. file) gestionado por docker.
+
 ### c. Basics of Orchestration
