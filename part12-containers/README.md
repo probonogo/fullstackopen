@@ -174,4 +174,19 @@ _10 best practices for Node/Express containerization. Read those [here](https://
 
 One big carelessness we have left is running the application as root instead of using a user with lower privileges.
 
+- Using Docker compose
+
+_https://docs.docker.com/compose/compose-file/compose-file-v3/_
+
+Usando el archivo de configuración creado [docker-compose.yml](playground/docker-compose.yml) es posible ejecutar con un comando varias tareas de dockers:
+
+```sh
+# ejecutar en este directorio el docker especificado en el archivo de conf.
+docker compose up
+# crear además una imagen
+docker compose up --build
+# ejecutar la aplicación en background
+docker compose up -d
+```
+
 ### c. Basics of Orchestration
