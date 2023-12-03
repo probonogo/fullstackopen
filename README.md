@@ -41,6 +41,7 @@
     - [c. Communicating with server in a redux application](#c-communicating-with-server-in-a-redux-application)
     - [d. React Query, useReducer and the context](#d-react-query-usereducer-and-the-context)
     - [Resources](#resources-5)
+  - [Part 12. Containers](#part-12-containers)
 
 ## Part 1. Introduction to React
 
@@ -511,19 +512,23 @@ console.log(JSON.parse(JSON.stringify(state)))
 
 ### d. React Query, useReducer and the context
 
-- [Managing data on the server with the React Query library]()
+- Managing data on the server with the React Query library
 
 ```sh
 npm install @tanstack/react-query
 ```
 
-- [Synchronizing data to the server using React Query]()
+- [Synchronizing data to the server using React Query](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/2451909dd8dfcd14fa8461fbcbed7654933a8fe6)
 - [useReducer](https://fullstackopen.com/en/part6/react_query_use_reducer_and_the_context#use-reducer) | [Example](https://github.com/fullstack-hy2020/hook-counter/tree/part6-1)
 - [useContext - Using context for passing the state to components](https://fullstackopen.com/en/part6/react_query_use_reducer_and_the_context#using-context-for-passing-the-state-to-components) | [Example](https://github.com/fullstack-hy2020/hook-counter/tree/part6-2)
-- [useContext - Defining the counter context in a separate file]() | [Example](https://github.com/fullstack-hy2020/hook-counter/tree/part6-3)
+- useContext - Defining the counter context in a separate file| [Example](https://github.com/fullstack-hy2020/hook-counter/tree/part6-3)
 
 ### Resources
 
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 
 ---
+
+## Part 12. Containers
+
+[README](part12-containers/README.md)
