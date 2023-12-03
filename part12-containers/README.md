@@ -237,4 +237,36 @@ There are two distinct methods to store the data:
 
 Ver [docker-compose.dev.yml](todo-app/todo-backend/docker-compose.dev.yml) sección `volumes` con las dos formas de hacer datos persistentes local o en un volumen (al final del conf. file) gestionado por docker.
 
+- Debugging issues in containers
+
+Por ejemplo... deseamos saber sí el siguiente contenedor está funcionando bien:
+
+```sh
+docker container run -d nginx
+```
+
+1. Revisar sí se está ejecutando: `docker container ls` y chequeamos sí se está ejecutando a su vez en el puerto 80 (en la respuesta devuelta).
+
+2. Reiniciamos con el indicador `-p` para usar otro puerto y probar sí el navegador accede a el:
+
+```sh
+docker container stop <id>
+docker container rm <id>
+
+docker container run -d -p 8080:80 nginx
+```
+
+_Por lo general, no ejecuto contenedores en modo independiente (es decir, con `-d`), ya que requiere un poco de esfuerzo adicional para abrir los registros._
+
+Visitarmos en el navegador para ver sí se muestra lo esperado: http://localhost:8080 (no es lo esperado por lo que podemos acceder de forma interactiva al contenedor para chequear sí todo está bien):
+
+```sh
+docker container ls
+docker exec -it ID-OR-NAME bash
+```
+
+Revisamos el archivo `/usr/share/nginx/html/index.html` (mejor lo eliminamos): `rm /usr/share/nginx/html/index.html` y creamos uno nuevo `echo "Hello, exec!" > /usr/share/nginx/html/index.html`
+
+Al eliminar el contenedor se pierden los cambios. Para mantener los cambios hay que usar volumenes persistentes: https://fullstackopen.com/en/part12/introduction_to_containers#other-docker-commands
+
 ### c. Basics of Orchestration
