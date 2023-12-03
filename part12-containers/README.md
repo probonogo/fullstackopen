@@ -282,4 +282,22 @@ redis:
     - 6379:6379
 ```
 
+Reiniciar docker con nueva configuración de `docker-compose.dev.yml`:
+
+```sh
+docker compose -f docker-compose.dev.yml down --volumes
+docker compose -f docker-compose.dev.yml up
+```
+
+Probar sí funciona con la app local de express:
+
+```sh
+REDIS_URL=redis://localhost:6379 MONGO_URL=mongodb://the_username:the_password@localhost:3456/the_database npm run dev
+```
+
+To work with Redis The project need to has https://www.npmjs.com/package/redis installed and two functions "promisified" - getAsync and setAsync.
+
+    - setAsync function takes in key and value, using the key to store the value.
+    - getAsync function takes in key and returns the value in a promise.
+
 ### c. Basics of Orchestration
