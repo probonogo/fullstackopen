@@ -159,4 +159,8 @@ docker build -t express-server . && docker run -p 3123:3000 express-server
 
 Kill la app: `docker container ls` y `docker container kill <id>`
 
+- Environment variable in Dockerfile
+
+We set an environment variable `DEBUG=playground:*` during CMD for the npm start. However, with Dockerfiles we could also use the instruction ENV to set environment variables: `ENV DEBUG=playground:*`
+
 ### c. Basics of Orchestration
