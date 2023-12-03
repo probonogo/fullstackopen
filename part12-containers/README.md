@@ -123,4 +123,40 @@ docker container ls
 docker container kill <id>
 ```
 
+- Fixing potential issues we created by copy-pasting
+
+Mediante el archivo [.dockerignore](playground/.dockerignore) especificamos directorios y archivos que no deben de ser copiados a la imagen, tal como `node_modules` pero además habría que especificar en el archivo [Dockerfile](playground/Dockerfile) que se ejecute el compando `npm install` para generar estas dependencias:
+
+```
+FROM node:16
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN npm install
+CMD DEBUG=playground:* npm start
+```
+
+Pero es mejor usar `npm ci` que automáticamente elimina la carpeta `node_modules` e instala la versión exacta de los paquetes en el `paquete-lock.json`, sin alterar ningún archivo, **creando compilaciones confiables**:
+
+```
+FROM node:16
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN npm ci
+CMD DEBUG=playground:* npm start
+```
+
+Usaremos `npm ci --only=production` para no perder tiempo instalando dependencias de desarrollo.
+
+```sh
+docker build -t express-server . && docker run -p 3123:3000 express-server
+```
+
+Kill la app: `docker container ls` y `docker container kill <id>`
+
 ### c. Basics of Orchestration
