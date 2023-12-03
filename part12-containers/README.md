@@ -163,4 +163,15 @@ Kill la app: `docker container ls` y `docker container kill <id>`
 
 We set an environment variable `DEBUG=playground:*` during CMD for the npm start. However, with Dockerfiles we could also use the instruction ENV to set environment variables: `ENV DEBUG=playground:*`
 
+- Dockerfile best practices
+
+There are 2 rules of thumb you should follow when creating images:
+
+    - Try to create as secure of an image as possible
+    - Try to create as small of an image as possible
+
+_10 best practices for Node/Express containerization. Read those [here](https://snyk.io/blog/10-best-practices-to-containerize-nodejs-web-applications-with-docker/)_
+
+One big carelessness we have left is running the application as root instead of using a user with lower privileges.
+
 ### c. Basics of Orchestration
