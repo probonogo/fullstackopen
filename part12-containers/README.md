@@ -269,4 +269,17 @@ Revisamos el archivo `/usr/share/nginx/html/index.html` (mejor lo eliminamos): `
 
 Al eliminar el contenedor se pierden los cambios. Para mantener los cambios hay que usar volumenes persistentes: https://fullstackopen.com/en/part12/introduction_to_containers#other-docker-commands
 
+- Redis
+
+[Docker Hub para Redis](https://hub.docker.com/_/redis)
+
+Configuration or Redis en `docker-compose.dev.yml`:
+
+```yaml
+redis:
+  image: redis
+  ports:
+    - 6379:6379
+```
+
 ### c. Basics of Orchestration
