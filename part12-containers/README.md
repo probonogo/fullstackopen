@@ -189,4 +189,43 @@ docker compose up --build
 docker compose up -d
 ```
 
+- Utilizing containers in development
+
+Se pueden usar varios `yaml conf. files` en la misma carpeta, con el parámetro `-f` se puede especificar que archivo ejecutar, como este [docker-compose.dev.yml](todo-app/todo-backend/docker-compose.dev.yml):
+
+```sh
+cd todo-app/todo-backend
+docker compose -f docker-compose.dev.yml up -d
+
+# browse http://localhost:3456
+# para seguir los registros:
+# docker compose -f docker-compose.dev.yml logs -f
+```
+
+Ejecutar mongoDB localmente después de instalar las dependencias:
+
+```sh
+npm install
+MONGO_URL=mongodb://localhost:3456/the_database npm run dev
+```
+
+- Bind mount and initializing the database
+
+Reiniciar el `docker-compose.dev.yml` con un archivo de entrada del volumen para crear usuario, contraseña y dos entradas en la bds de mongoDB:
+
+```sh
+docker compose -f docker-compose.dev.yml down --volumes
+docker compose -f docker-compose.dev.yml up
+```
+
+Sí hubirera un error de permiso de lectura: `chmod a+r mongo-init.js`
+
+Iniciar en otra terminal la aplicación `Express` con la variable de entorno correcta para conectar con la bds iniciada en el contenedor:
+
+```sh
+MONGO_URL=mongodb://the_username:the_password@localhost:3456/the_database npm run dev
+
+# browse http://localhost:3000/todos
+```
+
 ### c. Basics of Orchestration
