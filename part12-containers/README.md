@@ -362,5 +362,5 @@ docker build . -t hello-front
 # ejecutar la imagen en un contenedor:
 docker run -p 8000:80 hello-front
 
-# browse http://localhost:5001
+# browse http://localhost:8000
 ```
