@@ -350,3 +350,17 @@ docker run -p 5001:3000 hello-front
 
 # browse http://localhost:5001
 ```
+
+- Using multiple stages
+
+_https://hub.docker.com/_/nginx\_
+
+Modificar archivo [Dockerfile](hello-front/Dockerfile) para usar `nginx` y no `serve`, más crear una compilación en dos etapas que permite usar solo un parte de la etapa 1 que se copiará en un directorio de la segunda estapa (imagen).
+
+```sh
+docker build . -t hello-front
+# ejecutar la imagen en un contenedor:
+docker run -p 8000:80 hello-front
+
+# browse http://localhost:5001
+```
