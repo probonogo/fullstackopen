@@ -316,3 +316,37 @@ service:
 ```
 
 ### c. Basics of Orchestration
+
+- React in container
+
+Instalar react y crear archivos estáticos html, js, css
+
+```sh
+npx create-react-app hello-front
+cd hello-front
+npm run build
+```
+
+Crear archivo [Dockerfile](hello-front/Dockerfile) para copiar instación de react, instalar dependencias y crear archivos estáticos de desarrollo. Crear contenedor:
+
+```sh
+docker build . -t hello-front
+
+# Usar `bash` para verificar interior de contenedor
+docker run -it hello-front bash
+# ls (verifica sí están ahí las carpetas build, node_modules...)
+# ls build (chequear sí está index.html,...)
+# instalamos dentro del contenedor `serve` para servir archivos estáticos
+npm install -g serve
+serve build -n
+```
+
+Agregar los últimos dos comandos al [Dockerfile](hello-front/Dockerfile) y recrear la imagen:
+
+```sh
+docker build . -t hello-front
+# ejecutar la imagen en un contenedor:
+docker run -p 5001:3000 hello-front
+
+# browse http://localhost:5001
+```
