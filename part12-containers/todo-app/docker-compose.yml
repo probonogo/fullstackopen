@@ -1,8 +1,24 @@
 version: '3.8' # Version 3.8 is quite new and should work
 
+# services:
+#   app: # The name of the service, can be anything
+#     image: express-server-todo-backend # Declares which image to use
+#     build: . # Declares where to build if image is not found
+#     ports: # Declares the ports to publish
+#       - 3000:3000
+
 services:
-  app: # The name of the service, can be anything
-    image: express-server-todo-backend # Declares which image to use
-    build: . # Declares where to build if image is not found
-    ports: # Declares the ports to publish
+  app:
+    image: hello-front-dev
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./:/usr/src/app
+    ports:
       - 3000:3000
+    container_name: hello-front-dev1
+
+  # debug-helper:
+  #   image: busybox
+  # docker compose run debug-helper wget -O - http://app:3000

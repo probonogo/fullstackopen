@@ -404,3 +404,11 @@ docker compose -f docker-compose-dev.yml up
 - Instalar nuevas dependencias en el contenedor
 
 Sí se desea instalar una nueva dependencia, como axios, se puede editar localmente el `package.json` y después ejecutar en el contenedo un docker build: `docker build -f ARCHIVO-DOCKERFILE -t NOMBRE-DE-LA-IMAGEN .` también pudiera ejecutarse un exec para hacer un npm install: `docker exec hello-front-dev npm install` o quizás lo mejor, hacer un install axios directamente en el contenedor que instalaría axios y lo agregaría al package.json: `docker exec hello-front-dev npm install axios`
+
+- Communications between containers in a more ambitious environment
+
+  Un proxy inverso es un tipo de servidor proxy que recupera recursos en nombre de un cliente de uno o más servidores. Estos recursos luego se devuelven al cliente, como si se hubieran originado en el propio servidor proxy inverso.
+
+Crear archivo de configuración para `proxy inverso` en [nginx.conf](todo-app/todo-frontend/nginx.conf) y agregar servicio `nginx` a [docker-compose.yml](todo-app/todo-frontend/docker-compose.yml)
+
+    Por definición, localhost se refiere a la computadora actual utilizada para acceder a él. Con los contenedores, localhost es único para cada contenedor y conduce al contenedor mismo.
