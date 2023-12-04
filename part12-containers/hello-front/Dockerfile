@@ -9,6 +9,9 @@ RUN npm ci
 
 RUN npm run build
 
+# RUN npm install -g serve
+# CMD ["serve", "build", "-n"]
+
 # This is a new stage, everything before this is gone, except the files we want to COPY
 
 FROM nginx:1.20-alpine

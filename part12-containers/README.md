@@ -191,15 +191,15 @@ docker compose up -d
 
 - Utilizing containers in development
 
-Se pueden usar varios `yaml conf. files` en la misma carpeta, con el parámetro `-f` se puede especificar que archivo ejecutar, como este [docker-compose.dev.yml](todo-app/todo-backend/docker-compose.dev.yml):
+Se pueden usar varios `yaml conf. files` en la misma carpeta, con el parámetro `-f` se puede especificar que archivo ejecutar, como este [docker-compose-dev.yml](todo-app/todo-backend/docker-compose-dev.yml):
 
 ```sh
 cd todo-app/todo-backend
-docker compose -f docker-compose.dev.yml up -d
+docker compose -f docker-compose-dev.yml up -d
 
 # browse http://localhost:3456
 # para seguir los registros:
-# docker compose -f docker-compose.dev.yml logs -f
+# docker compose -f docker-compose-dev.yml logs -f
 ```
 
 Ejecutar mongoDB localmente después de instalar las dependencias:
@@ -211,11 +211,11 @@ MONGO_URL=mongodb://localhost:3456/the_database npm run dev
 
 - Bind mount and initializing the database
 
-Reiniciar el `docker-compose.dev.yml` con un archivo de entrada del volumen para crear usuario, contraseña y dos entradas en la bds de mongoDB:
+Reiniciar el `docker-compose-dev.yml` con un archivo de entrada del volumen para crear usuario, contraseña y dos entradas en la bds de mongoDB:
 
 ```sh
-docker compose -f docker-compose.dev.yml down --volumes
-docker compose -f docker-compose.dev.yml up
+docker compose -f docker-compose-dev.yml down --volumes
+docker compose -f docker-compose-dev.yml up
 ```
 
 Sí hubirera un error de permiso de lectura: `chmod a+r mongo-init.js`
@@ -235,7 +235,7 @@ There are two distinct methods to store the data:
     - Declaring a location in your filesystem (called bind mount)
     - Letting Docker decide where to store the data (volume)
 
-Ver [docker-compose.dev.yml](todo-app/todo-backend/docker-compose.dev.yml) sección `volumes` con las dos formas de hacer datos persistentes local o en un volumen (al final del conf. file) gestionado por docker.
+Ver [docker-compose-dev.yml](todo-app/todo-backend/docker-compose-dev.yml) sección `volumes` con las dos formas de hacer datos persistentes local o en un volumen (al final del conf. file) gestionado por docker.
 
 - Debugging issues in containers
 
@@ -273,7 +273,7 @@ Al eliminar el contenedor se pierden los cambios. Para mantener los cambios hay 
 
 [Docker Hub para Redis](https://hub.docker.com/_/redis)
 
-Configuration or Redis en `docker-compose.dev.yml`:
+Configuration or Redis en `docker-compose-dev.yml`:
 
 ```yaml
 redis:
@@ -282,11 +282,11 @@ redis:
     - 6379:6379
 ```
 
-Reiniciar docker con nueva configuración de `docker-compose.dev.yml`:
+Reiniciar docker con nueva configuración de `docker-compose-dev.yml`:
 
 ```sh
-docker compose -f docker-compose.dev.yml down --volumes
-docker compose -f docker-compose.dev.yml up
+docker compose -f docker-compose-dev.yml down --volumes
+docker compose -f docker-compose-dev.yml up
 ```
 
 Probar sí funciona con la app local de express:
@@ -363,4 +363,40 @@ docker build . -t hello-front
 docker run -p 8000:80 hello-front
 
 # browse http://localhost:8000
+```
+
+- Development in containers
+
+Trabajar con [dev.Dockerfile](todo-app/todo-frontend/dev.Dockerfile) para crear un entorno de desarrollo con docker que permita a varios desarroladores de un equipo trabajar con la misma configuración. Se usa `-f` en la compilación para indicar el archivo:
+
+```sh
+docker build -f ./dev.Dockerfile -t hello-front-dev .
+# ejecutar la imagen usando el directorio de trabajo actual para desarrollar
+#docker run -p 3000:3000 hello-front-dev
+docker run -p 3000:3000 -v "$(pwd):/usr/src/app/" hello-front-dev
+```
+
+Ahora se pueden editar los archivos con VSCode y los cambios se cargarían en caliente en el navegador.
+
+Mover la configuración a `docker-compose-yml` para iniciar todos los servicios necesarios de forma centralizados (mongodb, redis y la app del frontend en el directorio actual lista para ser editada y ejecutándose):
+
+```yaml
+services:
+  app:
+    image: hello-front-dev
+    build:
+      context: . # The context will pick this directory as the "build context"
+      dockerfile: dev.Dockerfile # This will simply tell which dockerfile to read
+    volumes:
+      - ./:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.yml"
+    ports:
+      - 3000:3000
+    container_name: hello-front-dev # This will name the container hello-front-dev
+```
+
+Ejecutar el archivo yaml `docker-compose-dev.yml` en modo desarrollo usando las fuentes del directorio actual para ser desplegada en el frontend (con la instalación de node en el docker + mongoDB + redis), por lo que no es necesario tener `node` instalado en el local para desarrollar:
+
+```sh
+docker compose -f docker-compose-dev.yml down --volumes
+docker compose -f docker-compose-dev.yml up
 ```
