@@ -300,4 +300,19 @@ To work with Redis The project need to has https://www.npmjs.com/package/redis i
     - setAsync function takes in key and value, using the key to store the value.
     - getAsync function takes in key and returns the value in a promise.
 
+- Persisting data with Redis
+
+Para conservar los datos en el directorio **redis_data** de la máquina host, se puede modificar el archivo yaml por:
+
+```yaml
+service:
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
+    command: ['redis-server', '--appendonly', 'yes'] # Overwrite the CMD
+    volumes: # Declare the volume
+      - ./redis_data:/data
+```
+
 ### c. Basics of Orchestration
