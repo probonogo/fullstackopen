@@ -400,3 +400,7 @@ Ejecutar el archivo yaml `docker-compose-dev.yml` en modo desarrollo usando las 
 docker compose -f docker-compose-dev.yml down --volumes
 docker compose -f docker-compose-dev.yml up
 ```
+
+- Instalar nuevas dependencias en el contenedor
+
+Sí se desea instalar una nueva dependencia, como axios, se puede editar localmente el `package.json` y después ejecutar en el contenedo un docker build: `docker build -f ARCHIVO-DOCKERFILE -t NOMBRE-DE-LA-IMAGEN .` también pudiera ejecutarse un exec para hacer un npm install: `docker exec hello-front-dev npm install` o quizás lo mejor, hacer un install axios directamente en el contenedor que instalaría axios y lo agregaría al package.json: `docker exec hello-front-dev npm install axios`
