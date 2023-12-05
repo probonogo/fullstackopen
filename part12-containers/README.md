@@ -412,3 +412,15 @@ Sí se desea instalar una nueva dependencia, como axios, se puede editar localme
 Crear archivo de configuración para `proxy inverso` en [nginx.conf](todo-app/todo-frontend/nginx.conf) y agregar servicio `nginx` a [docker-compose.yml](todo-app/todo-frontend/docker-compose.yml)
 
     Por definición, localhost se refiere a la computadora actual utilizada para acceder a él. Con los contenedores, localhost es único para cada contenedor y conduce al contenedor mismo.
+
+- Exercises. Integration frontend and backend to develop and production.
+
+1. Create a `dev` Dockerfile and docker compose:
+   Frontend: [dev.Dockerfile](my-app/frontend/dev.Dockerfile)
+   Backend: [dev.Dockerfile](my-app/backend/dev.Dockerfile)
+   [Dev Docker-compose](my-app/docker-compose.dev.yml)
+
+2. Create a `production` Dockerfile and docker compose:
+   Frontend: [dev.Dockerfile](my-app/frontend/Dockerfile)
+   Backend: [dev.Dockerfile](my-app/backend/Dockerfile)
+   [Production Docker-compose](my-app/docker-compose.yml)
