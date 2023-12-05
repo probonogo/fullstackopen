@@ -2,7 +2,7 @@
 
 _https://fullstackopen.com/en/part12_
 
-### a. Introduction to Containers7
+### a. Introduction to Containers
 
 - Containers and images
 
