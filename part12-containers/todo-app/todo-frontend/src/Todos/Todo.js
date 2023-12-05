@@ -1,11 +1,18 @@
 import React from 'react'
 
 const Todo = ({ todo, deleteTodo, completeTodo }) => {
+  const onClickDelete = (todo) => () => {
+    deleteTodo(todo)
+  }
+
+  const onClickComplete = (todo) => () => {
+    completeTodo(todo)
+  }
   const doneInfo = (
     <>
       <span>This todo is done</span>
       <span>
-        <button onClick={() => deleteTodo(todo)}> Delete </button>
+        <button onClick={() => onClickDelete(todo)}> Delete </button>
       </span>
     </>
   )
@@ -14,11 +21,13 @@ const Todo = ({ todo, deleteTodo, completeTodo }) => {
     <>
       <span>This todo is not done</span>
       <span>
-        <button onClick={() => deleteTodo(todo)}> Delete </button>
-        <button onClick={() => completeTodo(todo)}> Set as done </button>
+        <button onClick={onClickDelete(todo)}> Delete </button>
+        <button onClick={onClickComplete(todo)}> Set as done </button>
       </span>
     </>
   )
+
+  //   console.log(todo)
 
   return (
     <div
