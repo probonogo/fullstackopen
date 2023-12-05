@@ -1,8 +1,9 @@
 const express = require('express')
 const router = express.Router()
-const redis = require('../redis')
 
 const configs = require('../util/config')
+// const { set } = require('../app')
+const { updateRedis } = require('../util/redis')
 
 let visits = 0
 
@@ -13,6 +14,15 @@ router.get('/', async (req, res) => {
   res.send({
     ...configs,
     visits,
+  })
+})
+
+/* statistics  */
+router.get('/statistics', async (_, res) => {
+  updateRedis().then((added_todos) => {
+    res.send({
+      added_todos,
+    })
   })
 })
 
