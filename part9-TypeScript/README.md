@@ -117,3 +117,13 @@ npm install --save-dev ts-node-dev
 **Sources:**
 
 - https://www.typescriptlang.org/docs/handbook/modules.html
+
+### The horrors of any
+
+Configurar ESlint y sus extensiones para TypeScript:
+
+```sh
+npm install --save-dev eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+Ver [.eslintrc](.eslintrc) para ver las reglas definidas.
