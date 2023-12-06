@@ -6,7 +6,7 @@ _https://fullstackopen.com/en/part9_
 
 TypeScript offers features such as better development-time tooling, static code analysis, compile-time type checking and code-level documentation.
 
-#### Resources
+**Sources:**
 
 - https://github.com/DefinitelyTyped/DefinitelyTyped
 - https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html
@@ -29,7 +29,7 @@ npm install --save-dev ts-node typescript
 
 Exec a script: `npm run ts-node` or a file .ts: `npm run ts-node file.ts -- -s --someoption`
 
-#### Resources
+**Sources:**
 
 - [TypeScript playground](https://typescriptlang.org/play)
 
@@ -95,3 +95,9 @@ npm run multiply 1 lol
 let values: number[]
 let values: Array<number> // generic syntax
 ```
+
+- More about tsconfig
+
+**Sources:**
+
+- https://www.typescriptlang.org/tsconfig
