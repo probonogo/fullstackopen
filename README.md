@@ -41,6 +41,7 @@
     - [c. Communicating with server in a redux application](#c-communicating-with-server-in-a-redux-application)
     - [d. React Query, useReducer and the context](#d-react-query-usereducer-and-the-context)
     - [Resources](#resources-5)
+  - [Part 9. TypeScript](#part-9-typescript)
   - [Part 12. Containers](#part-12-containers)
 
 ## Part 1. Introduction to React
@@ -526,6 +527,12 @@ npm install @tanstack/react-query
 ### Resources
 
 - [Redux Toolkit](https://redux-toolkit.js.org/)
+
+---
+
+## Part 9. TypeScript
+
+[README](part19-TypeScript/README.md)
 
 ---
 
