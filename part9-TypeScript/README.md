@@ -178,3 +178,7 @@ npm install --save-dev ts-node-dev
 ```
 
 Actualizar sección de `scripts` de [package.json](flight-diaries/package.json).
+
+- Let there be code
+
+Ejecutar la aplicación con `npm run dev` y en producción con `npm run tsc` que crearía el código final en el directorio `build`. Con `npm start` se ejecuta la app en producción (como se especifica en package.json: scripts: `"start": "node build/index.js",`)
