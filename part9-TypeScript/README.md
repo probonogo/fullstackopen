@@ -182,3 +182,27 @@ Actualizar sección de `scripts` de [package.json](flight-diaries/package.json).
 - Let there be code
 
 Ejecutar la aplicación con `npm run dev` y en producción con `npm run tsc` que crearía el código final en el directorio `build`. Con `npm start` se ejecuta la app en producción (como se especifica en package.json: scripts: `"start": "node build/index.js",`)
+
+### Utility Types
+
+En el siguiente ejemplo se restrinje el tipo `DiaryEntry` para que no se muestre el campo `comment` y hay dos formas: 1. usando `Pick` u `Omit`.
+
+```ts
+export interface DiaryEntry {
+  id: number;
+  date: string;
+  weather: Weather;
+  visibility: Visibility;
+  comment?: string;
+}
+
+export type NonSensitiveDiaryEntry = Omit<DiaryEntry, 'comment'>;
+export type NonSensitiveDiaryEntry1 = Pick<
+  DiaryEntry,
+  'id' | 'date' | 'weather' | 'visibility'
+>;
+```
+
+**Sources:**
+
+- https://www.typescriptlang.org/docs/handbook/utility-types.html
