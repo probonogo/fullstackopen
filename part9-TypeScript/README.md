@@ -38,34 +38,34 @@ Exec a script: `npm run ts-node` or a file .ts: `npm run ts-node file.ts -- -s -
 Tipos primitivos: string, number,...
 
 ```ts
-type Operation = 'multiply' | 'add' | 'divide'
+type Operation = 'multiply' | 'add' | 'divide';
 
-type example = string | number // solo acepta un valor string o número
+type example = string | number; // solo acepta un valor string o número
 
-type Operation = 'multiply' | 'add' | 'divide'
+type Operation = 'multiply' | 'add' | 'divide';
 
 const calculator = (a: number, b: number, op: Operation): number => {
   switch (op) {
     case 'multiply':
-      return a * b
+      return a * b;
     case 'divide':
-      if (b === 0) throw new Error("Can't divide by 0!")
-      return a / b
+      if (b === 0) throw new Error("Can't divide by 0!");
+      return a / b;
     case 'add':
-      return a + b
+      return a + b;
     default:
-      throw new Error('Operation is not multiply, add or divide!')
+      throw new Error('Operation is not multiply, add or divide!');
   }
-}
+};
 
 try {
-  console.log(calculator(1, 5, 'divide'))
+  console.log(calculator(1, 5, 'divide'));
 } catch (error: unknown) {
-  let errorMessage = 'Something went wrong: '
+  let errorMessage = 'Something went wrong: ';
   if (error instanceof Error) {
-    errorMessage += error.message
+    errorMessage += error.message;
   }
-  console.log(errorMessage)
+  console.log(errorMessage);
 }
 ```
 
@@ -92,8 +92,8 @@ npm run multiply 1 lol
 - The alternative array syntax
 
 ```ts
-let values: number[]
-let values: Array<number> // generic syntax
+let values: number[];
+let values: Array<number>; // generic syntax
 ```
 
 - More about tsconfig
@@ -139,14 +139,14 @@ Ver [.eslintrc](.eslintrc) para ver las reglas definidas.
 ### Type assertion
 
 ```ts
-type Operation = 'multiply' | 'add' | 'divide'
+type Operation = 'multiply' | 'add' | 'divide';
 
 // validate the data here, value1, value2, op
 
 // assert the type
-const operation = op as Operation
+const operation = op as Operation;
 
-const result = calculator(Number(value1), Number(value2), operation)
+const result = calculator(Number(value1), Number(value2), operation);
 
 // or const result = calculator(Number(value1), Number(value2), op as Operation);
 // calculator(1, 3, 'multiply')
