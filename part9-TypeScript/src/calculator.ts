@@ -23,3 +23,5 @@ try {
   }
   console.log(errorMessage)
 }
+
+export { calculator }
