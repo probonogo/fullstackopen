@@ -118,7 +118,7 @@ npm install --save-dev ts-node-dev
 
 - https://www.typescriptlang.org/docs/handbook/modules.html
 
-### The horrors of any
+### The horrors of `any`
 
 Para desactivar en VSCode una advertencia del uso de `any` se puede agregar antes de la línea:
 
@@ -153,3 +153,28 @@ const result = calculator(Number(value1), Number(value2), operation)
 ```
 
 ## c. Typing an Express app
+
+### Setting up the project
+
+```sh
+npm init
+npm install typescript --save-dev
+# Agregar tsc a package.json > scripts > "tsc": "tsc",
+# Generar tsconfig.json
+npm run tsc -- --init
+```
+
+_Ten en cuenta el extra -- ¡antes del argumento real! Los argumentos antes de -- se interpretan como parte del comando npm, mientras que los posteriores son para el comando que se ejecuta a través del script (p.ej. tsc en este caso), como aparece aquí: `npm run tsc -- --init`_
+
+```sh
+npm install express
+npm install --save-dev eslint @types/express @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+Crear archivo [.eslintrc](flight-diaries/.eslintrc) e instalar `ts-node-dev` (o usar nodemon con ts-node):
+
+```sh
+npm install --save-dev ts-node-dev
+```
+
+Actualizar sección de `scripts` de [package.json](flight-diaries/package.json).
