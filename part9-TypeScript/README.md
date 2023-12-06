@@ -120,6 +120,12 @@ npm install --save-dev ts-node-dev
 
 ### The horrors of any
 
+Para desactivar en VSCode una advertencia del uso de `any` se puede agregar antes de la línea:
+
+```ts
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+```
+
 Configurar ESlint y sus extensiones para TypeScript:
 
 ```sh
