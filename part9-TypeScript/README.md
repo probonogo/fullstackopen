@@ -1,8 +1,8 @@
-## Part 9. TypeScript
+# Part 9. TypeScript
 
 _https://fullstackopen.com/en/part9_
 
-### a. Background and introduction
+## a. Background and introduction
 
 TypeScript offers features such as better development-time tooling, static code analysis, compile-time type checking and code-level documentation.
 
@@ -13,7 +13,7 @@ TypeScript offers features such as better development-time tooling, static code 
 - https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions
 - https://www.typescriptlang.org/docs/handbook/2/narrowing.html
 
-### b. First steps with TypeScript
+## b. First steps with TypeScript
 
 Install ts-node (npm) to compile and exec TypeScript. Global installation:
 
@@ -33,7 +33,7 @@ Exec a script: `npm run ts-node` or a file .ts: `npm run ts-node file.ts -- -s -
 
 - [TypeScript playground](https://typescriptlang.org/play)
 
-#### Creating your first own types
+### Creating your first own types
 
 Tipos primitivos: string, number,...
 
@@ -71,7 +71,7 @@ try {
 
 _Operation solo acepta estos tres tipos de valores_
 
-#### @types/{npm_package}
+### @types/{npm_package}
 
 Por lo general, las tipificaciones de paquetes existentes se pueden encontrar en la organización @types dentro de npm, y puedes agregar los tipos relevantes a tu proyecto instalando un paquete npm con el nombre de tu paquete con el prefijo @types/. Por ejemplo:
 
@@ -151,3 +151,5 @@ const result = calculator(Number(value1), Number(value2), operation)
 // or const result = calculator(Number(value1), Number(value2), op as Operation);
 // calculator(1, 3, 'multiply')
 ```
+
+## c. Typing an Express app
