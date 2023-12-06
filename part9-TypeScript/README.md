@@ -80,3 +80,11 @@ npm install --save-dev @types/react @types/express @types/lodash @types/jest @ty
 ```
 
 NB: _Dado que las tipificaciones solo se usan antes de la compilación, estas no son necesarias en la compilación de producción y siempre deben estar en devDependencies del package.json_
+
+- Improving the project
+
+```sh
+npm run multiply 5 2
+# devuelve un error:
+npm run multiply 1 lol
+```
