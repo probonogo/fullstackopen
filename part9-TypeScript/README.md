@@ -127,3 +127,19 @@ npm install --save-dev eslint @typescript-eslint/eslint-plugin @typescript-eslin
 ```
 
 Ver [.eslintrc](.eslintrc) para ver las reglas definidas.
+
+### Type assertion
+
+```ts
+type Operation = 'multiply' | 'add' | 'divide'
+
+// validate the data here, value1, value2, op
+
+// assert the type
+const operation = op as Operation
+
+const result = calculator(Number(value1), Number(value2), operation)
+
+// or const result = calculator(Number(value1), Number(value2), op as Operation);
+// calculator(1, 3, 'multiply')
+```
