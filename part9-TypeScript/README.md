@@ -124,6 +124,8 @@ Para desactivar en VSCode una advertencia del uso de `any` se puede agregar ante
 
 ```ts
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
+// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 ```
 
 Configurar ESlint y sus extensiones para TypeScript:
