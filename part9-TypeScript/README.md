@@ -88,3 +88,10 @@ npm run multiply 5 2
 # devuelve un error:
 npm run multiply 1 lol
 ```
+
+- The alternative array syntax
+
+```ts
+let values: number[]
+let values: Array<number> // generic syntax
+```
