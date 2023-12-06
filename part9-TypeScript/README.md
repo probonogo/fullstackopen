@@ -101,3 +101,19 @@ let values: Array<number> // generic syntax
 **Sources:**
 
 - https://www.typescriptlang.org/tsconfig
+
+### Adding Express to the mix
+
+    A good rule of thumb is to try importing a module using the import statement first. We will always use this method in the frontend. If import does not work, try a combined method: import ... = require('...').
+
+If it is absolutely impossible to get rid of an unused variable in VSCode, you can prefix it with an underscore to inform the compiler you have thought about it and there is nothing you can do. Example, let's rename the `req` variable `to \_req`.
+
+El equivalente a `nodemon` en ts es `ts-node-dev` para el modo de desarrollo, detectando los cambios y recargando nuevamente el navegador. Para insalarlo (y agreagar a la sección de scripts de package.json `"dev": "ts-node-dev index.ts",`):
+
+```sh
+npm install --save-dev ts-node-dev
+```
+
+**Sources:**
+
+- https://www.typescriptlang.org/docs/handbook/modules.html
