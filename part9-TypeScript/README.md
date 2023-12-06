@@ -70,3 +70,13 @@ try {
 ```
 
 _Operation solo acepta estos tres tipos de valores_
+
+#### @types/{npm_package}
+
+Por lo general, las tipificaciones de paquetes existentes se pueden encontrar en la organización @types dentro de npm, y puedes agregar los tipos relevantes a tu proyecto instalando un paquete npm con el nombre de tu paquete con el prefijo @types/. Por ejemplo:
+
+```sh
+npm install --save-dev @types/react @types/express @types/lodash @types/jest @types/mongoose
+```
+
+NB: _Dado que las tipificaciones solo se usan antes de la compilación, estas no son necesarias en la compilación de producción y siempre deben estar en devDependencies del package.json_
