@@ -206,3 +206,22 @@ export type NonSensitiveDiaryEntry1 = Pick<
 **Sources:**
 
 - https://www.typescriptlang.org/docs/handbook/utility-types.html
+
+### Type guards
+
+```sh
+const isString = (text: unknown): text is string => {
+  return typeof text === 'string' || text instanceof String;
+};
+```
+
+    The function is a so-called type guard. That means it is a function that returns a boolean and has a type predicate as the return type. In our case, the type predicate is: `text is string`
+
+    The general form of a type predicate is parameterName is Type where the parameterName is the name of the function parameter and Type is the targeted type.
+
+    If the type guard function returns true, the TypeScript compiler knows that the tested variable has the type that was defined in the type predicate.
+    Before the type guard is called, the actual type of the variable comment is not known, but after the call, if the code proceeds past the exception (that is, the type guard returned true), then the compiler knows that comment is of type string. The use of a type guard that returns a type predicate is one way to do type narrowing, that is, to give a variable a more strict or accurate type. As we will soon see there are also other kind of type guards available.
+
+### Sources
+
+- https://www.typescriptlang.org/docs/handbook/2/narrowing.html
