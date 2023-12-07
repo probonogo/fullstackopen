@@ -225,3 +225,5 @@ const isString = (text: unknown): text is string => {
 ### Sources
 
 - https://www.typescriptlang.org/docs/handbook/2/narrowing.html
+
+## d. React with types
