@@ -227,3 +227,11 @@ const isString = (text: unknown): text is string => {
 - https://www.typescriptlang.org/docs/handbook/2/narrowing.html
 
 ## d. React with types
+
+- Vite with Typescript
+
+Instalar React + TypeScript
+
+```sh
+npm create vite@latest my-app-name -- --template react-ts
+```
