@@ -235,3 +235,11 @@ Instalar React + TypeScript
 ```sh
 npm create vite@latest my-app-name -- --template react-ts
 ```
+
+Con el operador `!`, es posible afirmarle al compilador de TypeScript que el valor no es null:
+
+```sh
+ReactDOM.createRoot(document.getElementById('root')!).render(...
+```
+
+## e. Grande finale: Patientor

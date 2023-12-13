@@ -42,6 +42,7 @@
     - [d. React Query, useReducer and the context](#d-react-query-usereducer-and-the-context)
     - [Resources](#resources-5)
   - [Part 9. TypeScript](#part-9-typescript)
+  - [Part 11. Continuous Integration / Continuous Delivery systems (CI/CD)](#part-11-continuous-integration--continuous-delivery-systems-cicd)
   - [Part 12. Containers](#part-12-containers)
 
 ## Part 1. Introduction to React
@@ -533,6 +534,12 @@ npm install @tanstack/react-query
 ## Part 9. TypeScript
 
 [README](part9-TypeScript/README.md)
+
+---
+
+## Part 11. Continuous Integration / Continuous Delivery systems (CI/CD)
+
+[README](part11-CI_CD/README.md)
 
 ---
 
