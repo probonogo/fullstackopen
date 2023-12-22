@@ -41,6 +41,8 @@
     - [c. Communicating with server in a redux application](#c-communicating-with-server-in-a-redux-application)
     - [d. React Query, useReducer and the context](#d-react-query-usereducer-and-the-context)
     - [Resources](#resources-5)
+  - [Part 7. React router, custom hooks, styling app with CSS and webpack](#part-7-react-router-custom-hooks-styling-app-with-css-and-webpack)
+    - [a. React Router (v5)](#a-react-router-v5)
   - [Part 9. TypeScript](#part-9-typescript)
   - [Part 11. Continuous Integration / Continuous Delivery systems (CI/CD)](#part-11-continuous-integration--continuous-delivery-systems-cicd)
   - [Part 12. Containers](#part-12-containers)
@@ -83,22 +85,22 @@ npm run dev
 The contents of the array can be modified even though it is defined as a `const`. Because the array is an object, the variable always points to the same object. However, the content of the array changes as new items are added to it.
 
 ```js
-const t = [1, -1, 3];
-t.push(5); //[1, -1, 3, 5]
-const t2 = t.concat(5); //t2 = [1, -1, 3, 5]
+const t = [1, -1, 3]
+t.push(5) //[1, -1, 3, 5]
+const t2 = t.concat(5) //t2 = [1, -1, 3, 5]
 
 // destructuring assignment
-const t = [1, 2, 3, 4, 5];
-const [first, second, ...rest] = t;
-console.log(first, second); // 1, 2 is printed
-console.log(rest); // [3, 4, 5] is printed
+const t = [1, 2, 3, 4, 5]
+const [first, second, ...rest] = t
+console.log(first, second) // 1, 2 is printed
+console.log(rest) // [3, 4, 5] is printed
 
 t.forEach((value) => {
-  console.log(value); // numbers 1, -1, 3, 5 are printed, each on its own line
-});
+  console.log(value) // numbers 1, -1, 3, 5 are printed, each on its own line
+})
 
-const m2 = t.map((value) => '<li>' + value + '</li>');
-console.log(m2);
+const m2 = t.map((value) => '<li>' + value + '</li>')
+console.log(m2)
 // [ '<li>1</li>', '<li>2</li>', '<li>3</li>' ] is printed
 ```
 
@@ -106,42 +108,42 @@ console.log(m2);
 
 ```js
 const sum = (p1, p2) => {
-  console.log(p1);
-  console.log(p2);
-  return p1 + p2;
-};
+  console.log(p1)
+  console.log(p2)
+  return p1 + p2
+}
 
-const result = sum(1, 5);
-console.log(result);
+const result = sum(1, 5)
+console.log(result)
 
 // If there is just a single parameter, we can exclude the parentheses from the definition:
 const square = (p) => {
-  console.log(p);
-  return p * p;
+  console.log(p)
+  return p * p
 
   // If the function only contains a single expression then the braces are not needed.
-  const square = (p) => p * p;
+  const square = (p) => p * p
 
-  const t = [1, 2, 3];
-  const tSquared = t.map((p) => p * p);
+  const t = [1, 2, 3]
+  const tSquared = t.map((p) => p * p)
   // tSquared is now [1, 4, 9]
 
   // There are two ways to reference the function; one is giving a name in a function declaration.
   function product(a, b) {
-    return a * b;
+    return a * b
   }
 
-  const result = product(2, 6);
+  const result = product(2, 6)
   // result is now 12
 
   //The other way to define the function is by using a function expression.
   const average = function (a, b) {
-    return (a + b) / 2;
-  };
+    return (a + b) / 2
+  }
 
-  const result = average(2, 5);
+  const result = average(2, 5)
   // result is now 3.5
-};
+}
 ```
 
 #### Object methods and "this"
@@ -152,18 +154,18 @@ const arto = {
   age: 35,
   education: 'PhD',
   greet: function () {
-    console.log('hello, my name is ' + this.name);
+    console.log('hello, my name is ' + this.name)
   },
 
   doAddition: function (a, b) {
-    console.log(a + b);
+    console.log(a + b)
   },
-};
+}
 
-arto.doAddition(1, 4); // 5 is printed
+arto.doAddition(1, 4) // 5 is printed
 
-const referenceToAddition = arto.doAddition;
-referenceToAddition(10, 15); // 25 is printed
+const referenceToAddition = arto.doAddition
+referenceToAddition(10, 15) // 25 is printed
 ```
 
 #### Classes
@@ -171,19 +173,19 @@ referenceToAddition(10, 15); // 25 is printed
 ```js
 class Person {
   constructor(name, age) {
-    this.name = name;
-    this.age = age;
+    this.name = name
+    this.age = age
   }
   greet() {
-    console.log('hello, my name is ' + this.name);
+    console.log('hello, my name is ' + this.name)
   }
 }
 
-const adam = new Person('Adam Ondra', 35);
-adam.greet();
+const adam = new Person('Adam Ondra', 35)
+adam.greet()
 
-const janja = new Person('Janja Garnbret', 22);
-janja.greet();
+const janja = new Person('Janja Garnbret', 22)
+janja.greet()
 ```
 
 #### JavaScript materials
@@ -501,7 +503,7 @@ npm install @reduxjs/toolkit
 - [Redux Toolkit and console.log](https://github.com/patchamama/fullstackopen-Course-and-testing/commit/c0428846cbab5f6eae54fcdf803d1d97d39e799e)
 
 ```js
-console.log(JSON.parse(JSON.stringify(state)));
+console.log(JSON.parse(JSON.stringify(state)))
 ```
 
 - [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
@@ -528,6 +530,12 @@ npm install @tanstack/react-query
 ### Resources
 
 - [Redux Toolkit](https://redux-toolkit.js.org/)
+
+---
+
+## Part 7. React router, custom hooks, styling app with CSS and webpack
+
+### a. React Router (v5)
 
 ---
 

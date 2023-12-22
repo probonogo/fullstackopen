@@ -53,3 +53,40 @@ Think about a hypothetical situation where we have an application being worked o
     Para tomar esta decisión, se necesitaría información sobre los recursos disponibles, la complejidad del proyecto, los requisitos de seguridad y la preferencia del equipo. Si el equipo prefiere una solución de bajo mantenimiento y rápida implementación, una opción basada en la nube podría ser más adecuada. Si la empresa tiene requisitos específicos de seguridad o control, un entorno autohospedado podría ser preferible.
 
     En conclusión, el desarrollo exitoso de aplicaciones requiere una combinación de colaboración efectiva, pruebas exhaustivas, control de versiones, documentación y un enfoque proactivo para el soporte postlanzamiento.
+
+## b. Getting started with GitHub Actions
+
+Para que GitHub reconozco los workflows, deben de especificarse en la carpeta de trabajo `.github/workflows` en el repositorio. Cada flujo de trabajo es un archivo independiente en esta carpeta que debe de configurarse utilizando `YAML` (lenguaje de serialización de datos).
+
+A basic workflow contains three elements in a YAML document. These three elements are:
+
+- name: Yep, you guessed it, the name of the workflow
+- (on) triggers: The events that trigger the workflow to be executed
+- jobs: The separate jobs that the workflow will execute (a basic workflow might contain only one job).
+
+A simple workflow definition looks like this:
+
+```yaml
+name: Hello World!
+
+on:
+  push:
+    branches:
+      - master
+      # note that your "main" branch might be called main instead of master
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Say hello
+        run: |
+          echo "Hello World!"
+```
+
+**Recursos**
+
+- https://docs.github.com/en/actions/creating-actions
+- https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+- https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows
+- https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows
