@@ -43,6 +43,7 @@
     - [Resources](#resources-5)
   - [Part 7. React router, custom hooks, styling app with CSS and webpack](#part-7-react-router-custom-hooks-styling-app-with-css-and-webpack)
     - [a. React Router (v5)](#a-react-router-v5)
+    - [b. Custom hooks](#b-custom-hooks)
   - [Part 9. TypeScript](#part-9-typescript)
   - [Part 11. Continuous Integration / Continuous Delivery systems (CI/CD)](#part-11-continuous-integration--continuous-delivery-systems-cicd)
   - [Part 12. Containers](#part-12-containers)
@@ -536,6 +537,83 @@ npm install @tanstack/react-query
 ## Part 7. React router, custom hooks, styling app with CSS and webpack
 
 ### a. React Router (v5)
+
+Install react router:
+
+```sh
+npm install react-router-dom
+```
+
+See example using react Router, and the hooks useNavigate, useParams and useMatch [here](https://github.com/patchamama/fullstackopen-Course-and-testing/blob/34ca90b9abd1aa13cda57ae0175799c7d5285239/part7/src/main.jsx)
+
+### b. Custom hooks
+
+Let's define our own custom `useField` hook that simplifies the state management of the form:
+
+```js
+const useField = (type) => {
+  const [value, setValue] = useState('')
+
+  const onChange = (event) => {
+    setValue(event.target.value)
+  }
+
+  return {
+    type,
+    value,
+    onChange,
+  }
+}
+```
+
+The hook can be used in the following way:
+
+```js
+const App = () => {
+  const name = useField('text')
+  // ...
+
+  return (
+    <div>
+      <form>
+        <input type={name.type} value={name.value} onChange={name.onChange} />
+        // ...
+      </form>
+    </div>
+  )
+}
+```
+
+Or with `Spread attributes`:
+
+```js
+const App = () => {
+  const name = useField('text')
+  // ...
+
+  return (
+    <div>
+      <form>
+        <input {...name} />
+        // ...
+      </form>
+    </div>
+  )
+}
+```
+
+As the example in the React documentation states, the following two ways of passing props to a component achieve the exact same result:
+
+```js
+<Greeting firstName='Arto' lastName='Hellas' />
+
+const person = {
+  firstName: 'Arto',
+  lastName: 'Hellas'
+}
+
+<Greeting {...person} />
+```
 
 ---
 
