@@ -46,6 +46,7 @@
     - [b. Custom hooks](#b-custom-hooks)
     - [Prototipo de hook para realizar peticiiones fetch con axios que se pueden usar en cualquier aplicación. Solo hay que actualizar `baseURL` y el `token`:](#prototipo-de-hook-para-realizar-peticiiones-fetch-con-axios-que-se-pueden-usar-en-cualquier-aplicación-solo-hay-que-actualizar-baseurl-y-el-token)
     - [c. React Bootstrap](#c-react-bootstrap)
+    - [Material UI](#material-ui)
   - [Part 9. TypeScript](#part-9-typescript)
   - [Part 11. Continuous Integration / Continuous Delivery systems (CI/CD)](#part-11-continuous-integration--continuous-delivery-systems-cicd)
   - [Part 12. Containers](#part-12-containers)
@@ -673,6 +674,18 @@ Agregar en la sección del `head` en el archivo `public/index.html`:
 ```
 
 Código de ejemplo [aquí](notes-bootstrap/src/main.jsx).
+
+### Material UI
+
+Fuente: https://mui.com/
+
+Instalar la librería:
+
+```sh
+npm install @mui/material @emotion/react @emotion/styled
+```
+
+Código de ejemplo [aquí](notes-materialui/src/main.jsx).
 
 ---
 
