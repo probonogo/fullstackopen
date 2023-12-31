@@ -672,6 +672,8 @@ Agregar en la sección del `head` en el archivo `public/index.html`:
 />
 ```
 
+Código de ejemplo [aquí](notes-bootstrap/src/main.jsx).
+
 ---
 
 ## Part 9. TypeScript
