@@ -48,6 +48,8 @@
     - [c. React Bootstrap](#c-react-bootstrap)
     - [Material UI](#material-ui)
     - [Ejecutar un servidor local para archivos estáticos. Ejecutar este comando en el directorio con el index:](#ejecutar-un-servidor-local-para-archivos-estáticos-ejecutar-este-comando-en-el-directorio-con-el-index)
+    - [Algunos comandos útiles](#algunos-comandos-útiles)
+    - [Seguridad](#seguridad)
   - [Part 9. TypeScript](#part-9-typescript)
   - [Part 11. Continuous Integration / Continuous Delivery systems (CI/CD)](#part-11-continuous-integration--continuous-delivery-systems-cicd)
   - [Part 12. Containers](#part-12-containers)
@@ -693,6 +695,31 @@ Código de ejemplo [aquí](notes-materialui/src/main.jsx).
 ```sh
 npx static-server
 ```
+
+### Algunos comandos útiles
+
+Puede verificar qué tan actualizadas están sus dependencias usando el comando:
+
+```sh
+npm outdated --depth 0
+```
+
+Las dependencias se pueden actualizar actualizando el archivo `package.json` y ejecutando el comando:
+
+```sh
+npm install -g npm-check-updates
+npm-check-updates
+```
+
+El archivo package.json se actualiza ejecutando el comando `ncu -u` y `npm install`.
+
+Para revisar dependencias con problemas de seguridad (`npm audit`) y hacer las correcciones: `npm audit fix`. El comando `npm audit fix --force` puede determinar en actualizaciones _major_ que pueden colapsar la aplicación.
+
+### Seguridad
+
+La documentación de Express incluye una sección sobre seguridad: [Prácticas recomendadas de producción: seguridad](https://expressjs.com/en/advanced/best-practice-security.html), que vale la pena leer. También se recomienda agregar una librería llamada [Helmet](https://helmetjs.github.io/) al backend. Incluye un conjunto de middlewares que eliminan algunas vulnerabilidades de seguridad en aplicaciones Express.
+
+También vale la pena usar el [plugin de seguridad](https://github.com/nodesecurity/eslint-plugin-security) de ESlint.
 
 ---
 
