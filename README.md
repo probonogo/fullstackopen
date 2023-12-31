@@ -47,6 +47,7 @@
     - [Prototipo de hook para realizar peticiiones fetch con axios que se pueden usar en cualquier aplicación. Solo hay que actualizar `baseURL` y el `token`:](#prototipo-de-hook-para-realizar-peticiiones-fetch-con-axios-que-se-pueden-usar-en-cualquier-aplicación-solo-hay-que-actualizar-baseurl-y-el-token)
     - [c. React Bootstrap](#c-react-bootstrap)
     - [Material UI](#material-ui)
+    - [Ejecutar un servidor local para archivos estáticos. Ejecutar este comando en el directorio con el index:](#ejecutar-un-servidor-local-para-archivos-estáticos-ejecutar-este-comando-en-el-directorio-con-el-index)
   - [Part 9. TypeScript](#part-9-typescript)
   - [Part 11. Continuous Integration / Continuous Delivery systems (CI/CD)](#part-11-continuous-integration--continuous-delivery-systems-cicd)
   - [Part 12. Containers](#part-12-containers)
@@ -686,6 +687,12 @@ npm install @mui/material @emotion/react @emotion/styled
 ```
 
 Código de ejemplo [aquí](notes-materialui/src/main.jsx).
+
+### Ejecutar un servidor local para archivos estáticos. Ejecutar este comando en el directorio con el index:
+
+```sh
+npx static-server
+```
 
 ---
 
