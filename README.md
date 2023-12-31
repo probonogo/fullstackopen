@@ -44,6 +44,7 @@
   - [Part 7. React router, custom hooks, styling app with CSS and webpack](#part-7-react-router-custom-hooks-styling-app-with-css-and-webpack)
     - [a. React Router (v5)](#a-react-router-v5)
     - [b. Custom hooks](#b-custom-hooks)
+    - [Prototipo de hook para realizar peticiiones fetch con axios que se pueden usar en cualquier aplicación. Solo hay que actualizar `baseURL` y el `token`:](#prototipo-de-hook-para-realizar-peticiiones-fetch-con-axios-que-se-pueden-usar-en-cualquier-aplicación-solo-hay-que-actualizar-baseurl-y-el-token)
   - [Part 9. TypeScript](#part-9-typescript)
   - [Part 11. Continuous Integration / Continuous Delivery systems (CI/CD)](#part-11-continuous-integration--continuous-delivery-systems-cicd)
   - [Part 12. Containers](#part-12-containers)
@@ -613,6 +614,40 @@ const person = {
 }
 
 <Greeting {...person} />
+```
+
+### Prototipo de hook para realizar peticiiones fetch con axios que se pueden usar en cualquier aplicación. Solo hay que actualizar `baseURL` y el `token`:
+
+```js
+import axios from 'axios'
+const baseUrl = '/api/notes'
+
+let token = null
+
+const setToken = (newToken) => {
+  token = `bearer ${newToken}`
+}
+
+const getAll = async () => {
+  const response = await axios.get(baseUrl)
+  return response.data
+}
+
+const create = async (newObject) => {
+  const config = {
+    headers: { Authorization: token },
+  }
+
+  const response = await axios.post(baseUrl, newObject, config)
+  return response.data
+}
+
+const update = async (id, newObject) => {
+  const response = await axios.put(`${baseUrl}/${id}`, newObject)
+  return response.data
+}
+
+export default { getAll, create, update, setToken }
 ```
 
 ---
