@@ -45,6 +45,7 @@
     - [a. React Router (v5)](#a-react-router-v5)
     - [b. Custom hooks](#b-custom-hooks)
     - [Prototipo de hook para realizar peticiiones fetch con axios que se pueden usar en cualquier aplicación. Solo hay que actualizar `baseURL` y el `token`:](#prototipo-de-hook-para-realizar-peticiiones-fetch-con-axios-que-se-pueden-usar-en-cualquier-aplicación-solo-hay-que-actualizar-baseurl-y-el-token)
+    - [c. React Bootstrap](#c-react-bootstrap)
   - [Part 9. TypeScript](#part-9-typescript)
   - [Part 11. Continuous Integration / Continuous Delivery systems (CI/CD)](#part-11-continuous-integration--continuous-delivery-systems-cicd)
   - [Part 12. Containers](#part-12-containers)
@@ -648,6 +649,27 @@ const update = async (id, newObject) => {
 }
 
 export default { getAll, create, update, setToken }
+```
+
+### c. React Bootstrap
+
+Hay algunas versiones diferentes de React de Bootstrap como [reactstrap](http://reactstrap.github.io/) y [react-bootstrap](https://react-bootstrap.github.io/).
+
+Instalar react-bootstrap:
+
+```sh
+npm install react-bootstrap
+```
+
+Agregar en la sección del `head` en el archivo `public/index.html`:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+  crossorigin="anonymous"
+/>
 ```
 
 ---
