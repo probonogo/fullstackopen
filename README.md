@@ -726,7 +726,7 @@ También vale la pena usar el [plugin de seguridad](https://github.com/nodesecur
 
 ```sh
 npm install --save-dev --save-exact prettier
-node --eval "fs.writeFileSync('.prettierrc','{}\n')"
+node --eval "fs.writeFileSync('.prettierrc','{\n"trailingComma": "none",\n"tabWidth": 4,\n"semi": false,\n"singleQuote": true\n}\n')"
 node --eval "fs.writeFileSync('.prettierignore','build\ncoverage')"
 ```
 
