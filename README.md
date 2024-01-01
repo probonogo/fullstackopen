@@ -50,6 +50,7 @@
     - [Ejecutar un servidor local para archivos estáticos. Ejecutar este comando en el directorio con el index:](#ejecutar-un-servidor-local-para-archivos-estáticos-ejecutar-este-comando-en-el-directorio-con-el-index)
     - [Algunos comandos útiles](#algunos-comandos-útiles)
     - [Seguridad](#seguridad)
+    - [Instalar y configurar prettier:](#instalar-y-configurar-prettier)
   - [Part 9. TypeScript](#part-9-typescript)
   - [Part 11. Continuous Integration / Continuous Delivery systems (CI/CD)](#part-11-continuous-integration--continuous-delivery-systems-cicd)
   - [Part 12. Containers](#part-12-containers)
@@ -720,6 +721,16 @@ Para revisar dependencias con problemas de seguridad (`npm audit`) y hacer las c
 La documentación de Express incluye una sección sobre seguridad: [Prácticas recomendadas de producción: seguridad](https://expressjs.com/en/advanced/best-practice-security.html), que vale la pena leer. También se recomienda agregar una librería llamada [Helmet](https://helmetjs.github.io/) al backend. Incluye un conjunto de middlewares que eliminan algunas vulnerabilidades de seguridad en aplicaciones Express.
 
 También vale la pena usar el [plugin de seguridad](https://github.com/nodesecurity/eslint-plugin-security) de ESlint.
+
+### Instalar y configurar prettier:
+
+```sh
+npm install --save-dev --save-exact prettier
+node --eval "fs.writeFileSync('.prettierrc','{}\n')"
+node --eval "fs.writeFileSync('.prettierignore','build\ncoverage')"
+```
+
+Fuente: https://prettier.io/docs/en/install
 
 ---
 
