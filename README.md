@@ -54,6 +54,7 @@
   - [Part 9. TypeScript](#part-9-typescript)
   - [Part 11. Continuous Integration / Continuous Delivery systems (CI/CD)](#part-11-continuous-integration--continuous-delivery-systems-cicd)
   - [Part 12. Containers](#part-12-containers)
+  - [Part 12. Using relational databases](#part-12-using-relational-databases)
 
 ## Part 1. Introduction to React
 
@@ -727,8 +728,6 @@ También vale la pena usar el [plugin de seguridad](https://github.com/nodesecur
 ```sh
 npm install --save-dev --save-exact prettier
 node --eval "fs.writeFileSync('.prettierrc','{\n\"trailingComma\": \"none\",\n\"tabWidth\": 2,\n\"semi\": false,\n\"singleQuote\": true,\n\"editor.formatOnSave\": true\n}\n')"
-
-
 node --eval "fs.writeFileSync('.prettierignore','build\ncoverage')"
 ```
 
@@ -751,3 +750,9 @@ Fuente: https://prettier.io/docs/en/install
 ## Part 12. Containers
 
 [README](part12-containers/README.md)
+
+---
+
+## Part 12. Using relational databases
+
+[README](part13_Using-relational-databases/README.md)
