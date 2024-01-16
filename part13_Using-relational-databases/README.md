@@ -65,3 +65,20 @@ insert into notes (content, important) values ('MongoDB is webscale', false);
 # Listar el contenido de la tabla notes:
 select * from notes;
 ```
+
+### Node application using a relational database
+
+sequelize: is an ORM (Object relational mapping) library that allows you to store JavaScript objects in a relational database without using the SQL language itself.
+
+- Instalar libs inecesarias:
+
+```sh
+npm install -D nodemon
+npm install express dotenv pg sequelize
+```
+
+- Ejecutar aplicación `index.js`:
+
+```sh
+node index.js
+```
